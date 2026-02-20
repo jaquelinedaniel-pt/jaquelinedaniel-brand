@@ -1,0 +1,141 @@
+:root {
+    --bg: #050505;
+    --text: #ffffff;
+    --gold: #b8975a;
+    --font-main: 'Inter', sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: var(--font-main);
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Grão Analógico para textura de cinema */
+.analog-grain {
+    position: fixed; inset: 0;
+    background: url('https://grainy-gradients.vercel.app/noise.svg');
+    opacity: 0.05; pointer-events: none; z-index: 100;
+}
+
+/* Metadata */
+.metadata {
+    position: fixed; font-size: 10px; letter-spacing: 0.6em;
+    text-transform: uppercase; opacity: 0.4; z-index: 50;
+}
+.top-right { top: 40px; right: 40px; }
+.bottom-left { bottom: 40px; left: 40px; width: 250px; line-height: 2; }
+
+/* A Lâmina Visual */
+.blade {
+    position: absolute; width: 1px; height: 150vh;
+    background: linear-gradient(to bottom, transparent, var(--text), transparent);
+    left: 50%; transform: rotate(35deg); opacity: 0.15; z-index: 1;
+}
+
+/* Container Principal */
+.sculpture-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+/* O NOME (Atrás da foto) */
+.name-sculpture {
+    position: absolute;
+    font-size: clamp(5rem, 18vw, 22rem);
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    line-height: 0.8;
+    text-transform: uppercase;
+    z-index: 2; /* Menor que a imagem */
+    color: var(--text);
+    text-align: center;
+    pointer-events: none;
+}
+
+/* A FOTO (Frente do nome) */
+.portrait-container {
+    position: relative;
+    z-index: 5; /* Maior que o nome */
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-image {
+    height: 100%;
+    width: auto;
+    filter: contrast(1.1) brightness(0.9) grayscale(0.2);
+    transition: transform 0.1s ease-out;
+}
+
+/* Manifesto */
+.manifesto-layer {
+    position: absolute;
+    bottom: 8%;
+    z-index: 10;
+    text-align: center;
+}
+
+.manifesto-text {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 0.2em;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards 1.5s;
+}
+
+.scroll-hint {
+    margin-top: 20px;
+    font-size: 0.6rem;
+    letter-spacing: 0.5em;
+    opacity: 0.3;
+}
+
+/* ANIMAÇÃO DE ABERTURA (O NOME SAINDO DE TRÁS) */
+.reveal {
+    animation: powerReveal 2.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+
+
+@keyframes powerReveal {
+    0% { 
+        transform: translateZ(-200px) scale(0.8);
+        letter-spacing: -0.5em; 
+        opacity: 0; 
+        filter: blur(20px); 
+    }
+    40% {
+        opacity: 1;
+        filter: blur(0);
+    }
+    100% { 
+        transform: translateZ(0) scale(1);
+        letter-spacing: -0.05em; 
+        opacity: 1; 
+    }
+}
+
+@keyframes fadeIn {
+    to { opacity: 0.9; }
+}
+
+/* Ajustes Mobile */
+@media (max-width: 768px) {
+    .name-sculpture { font-size: 25vw; }
+    .hero-image { height: 70vh; }
+}
