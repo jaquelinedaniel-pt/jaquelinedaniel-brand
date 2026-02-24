@@ -3,34 +3,383 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JAQUELINE DANIEL | Objeto de Design</title>
+    <title>JAQUELINE DANIEL | Estrategista de Operações & Tech</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Space+Grotesk:wght@300;500&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body class="loading">
 
     <div class="analog-grain"></div>
 
-    <div class="metadata top-right">Status: Presença Autoral</div>
-    <div class="metadata bottom-left">
-        NÃO É SOBRE O QUE EU FIZ.<br>
-        É SOBRE A LÓGICA QUE ME GUIA.
+    <nav class="side-nav">
+        <a href="#home" class="nav-dot active" data-label="I. HOME"></a>
+        <a href="#about" class="nav-dot" data-label="II. TRAJETÓRIA"></a>
+        <a href="#hub" class="nav-dot" data-label="III. METODOLOGIA"></a>
+        <a href="#ecosystem" class="nav-dot" data-label="IV. SISTEMA"></a>
+        <a href="#proof" class="nav-dot" data-label="V. TRACK RECORD"></a>
+        <a href="#articles" class="nav-dot" data-label="VI. ARQUIVOS"></a>
+        <a href="#contact" class="nav-dot" data-label="VII. CONTATO"></a>
+    </nav>
+
+    <div class="metadata top-right">ANÁLISE ESTRATÉGICA // RESOLUÇÃO DE PROBLEMAS</div>
+    
+    <div class="home-logic-statement">
+        O caos é o subproduto da <br> 
+        execução sem critério. <br>
+        Executar sem diagnosticar <br>
+        é apenas acelerar o erro
     </div>
 
-    <div class="blade"></div>
-
-    <main class="sculpture-container">
+    <main class="sculpture-container" id="home">
         <h1 class="name-sculpture reveal">JAQUELINE<br>DANIEL</h1>
-
         <div class="portrait-container">
             <img src="assets/hero.png" alt="Jaqueline Daniel" class="hero-image">
         </div>
-
         <div class="manifesto-layer">
             <p class="manifesto-text">"O CAOS É MATÉRIA-PRIMA. EU SOU A ESTRUTURA."</p>
-            <div class="scroll-hint">SCROLL // DESVENDAR</div>
+            <div class="scroll-hint">SCROLL // DESVENDAR A LÓGICA</div>
         </div>
     </main>
+
+    <section class="section-genesis" id="about">
+        <div class="genesis-magazine-grid">
+            <div class="magazine-text">
+                <span class="chapter-num">II. A EVOLUÇÃO DA ESCALA</span>
+                <h2 class="magazine-title">A EVOLUÇÃO DA <span class="gold-serif">SOLUÇÃO.</span></h2>
+                
+                <p class="magazine-lead">
+                    Minha trajetória não é uma transição de carreira, é uma progressão lógica. Do varejo de 
+                    alta rotatividade ao atacado de alta complexidade, eu não apenas geri operações. 
+                    Eu modelei ecossistemas onde o rigor logístico era a única métrica de sobrevivência.
+                </p>
+                
+                <div class="magazine-body">
+                    <p>Hoje, atuo no ponto cego entre o Board de Negócios e a Equipe Técnica. Eu sou a 
+                    intérprete que converte dores operacionais em requisitos de software de alta precisão.</p>
+                    <p>No meu mundo, a tecnologia não é o fim, é o braço armado de uma estratégia bem desenhada. 
+                    Eu não entrego código. Entrego a solução do problema que o código, sozinho, jamais resolveria.</p>
+                    <p class="gold-quote">"O mercado está saturado de executores que entregam exatamente o que o cliente acha que precisa.
+                    Sem diagnosticar e escutar o que não foi dito. E é exatamente por isso que os projetos falham"</p>
+                </div>
+            </div>
+
+            <div class="magazine-visual">
+                <div class="magazine-card">
+                    <div class="photo-container">
+                        <img src="assets/foto-profissional.jpg" alt="Jaqueline Daniel Editorial">
+                        <div class="photo-caption">JAQUELINE DANIEL // ESTRATEGISTA</div>
+                    </div>
+                    <div class="card-accent"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-hub" id="hub">
+        <div class="hub-layout">
+            <div class="hub-sidebar">
+                <span class="chapter-num">III. ARQUITETURA DE SOLUÇÃO</span>
+                <h2 class="massive-outline-side">O Método para <span class="gold-italic">o Valor.</span></h2>
+                
+                <div class="method-flow">
+                    <div class="flow-step">
+                        <span class="step-dot"></span>
+                        <span class="step-name">ESCUTA</span>
+                    </div>
+                    <div class="flow-line"></div>
+                    <div class="flow-step">
+                        <span class="step-dot"></span>
+                        <span class="step-name">DIAGNÓSTICO</span>
+                    </div>
+                    <div class="flow-line"></div>
+                    <div class="flow-step">
+                        <span class="step-dot"></span>
+                        <span class="step-name">SOLUÇÃO</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hub-content">
+                <div class="trigger-box" onclick="openPillar(this)">
+                    <span class="t-num">01</span>
+                    <h3 class="t-title">O DIAGNÓSTICO IMPLACÁVEL</h3>
+                    <div class="t-btn">DESVENDAR</div>
+                    <div class="pillar-full-text" style="display: none;">
+                        <h2 class="modal-title">ALÉM DO PEDIDO <span class="modal-subtitle">(A Tirania do Pedido)</span></h2>
+                        <p class="modal-text">Executar um pedido sem questionar a necessidade é 
+                        um erro financeiro. Minha metodologia aplica a Engenharia de Necessidade: uma triagem 
+                        que confronta o desejo do stakeholder com a realidade do mercado. Eu impeço o desperdício de capital 
+                        em soluções tecnicamente perfeitas, mas comercialmente inúteis.</p>
+                    </div>
+                </div>
+
+                <div class="trigger-box" onclick="openPillar(this)">
+                    <span class="t-num">02</span>
+                    <h3 class="t-title">ARQUITETURA DE VIABILIDADE</h3>
+                    <div class="t-btn">DESVENDAR</div>
+                    <div class="pillar-full-text" style="display: none;">
+                        <h2 class="modal-title">O Algoritmo do Lucro <span class="modal-subtitle">(Visão de Negócio)</span></h2>
+                        <p class="modal-text">Toda solução tecnológica deve ser uma função do fluxo de caixa. Minha visão é 
+                        enraizada no P&L (Profit and Loss). Antes da primeira linha de código, calculo o impacto operacional, 
+                        a escalabilidade e o retorno real. Se não gera eficiência ou lucro, não deve ser construído.</p>
+                    </div>
+                </div>
+
+                <div class="trigger-box" onclick="openPillar(this)">
+                    <span class="t-num">03</span>
+                    <h3 class="t-title">ORATÓRIA E INFLUÊNCIA</h3>
+                    <div class="t-btn">DESVENDAR</div>
+                    <div class="pillar-full-text" style="display: none;">
+                        <h2 class="modal-title">O Protocolo de Alinhamento <span class="modal-subtitle">(Persuasão)</span></h2>
+                        <p class="modal-text">Projetos morrem no ruído entre a expectativa e a entrega. Utilizo técnicas de 
+                        negociação de alta performance e psicologia cognitiva para alinhar os interesses do cliente e a capacidade 
+                        da técnica.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="expansion-overlay" class="expansion-overlay">
+            <div class="glass-card-monumental">
+                <button class="close-card" onclick="closePillar()">✕ FECHAR</button>
+                <div id="card-content"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-ecosystem" id="ecosystem">
+        <div class="ecosystem-wrapper">
+            <div class="eco-diagram">
+                <div class="core-node"><span class="core-text">RESULTADO</span></div>
+                
+                <div class="eco-node node-top" onclick="updateEco(this)">
+                    <div class="node-box"><span class="node-id">01</span><h4 class="node-name">VIABILIDADE</h4></div>
+                    <div class="connector-v"></div>
+                    <div class="eco-full-text" style="display: none;">
+                        <h2 class="eco-info-title">VISÃO <br><span class="gold-text">ANALÍTICA.</span></h2>
+                        <p class="eco-info-text">Não analiso cenários, calculo viabilidade. O problema nunca é apenas o software; 
+                        é o 'sangramento' financeiro causado por processos ineficientes. Eu estanco a perda antes de desenhar a tecnologia.</p>
+                    </div>
+                </div>
+
+                <div class="eco-node node-right" onclick="updateEco(this)">
+                    <div class="connector-h"></div>
+                    <div class="node-box"><span class="node-id">02</span><h4 class="node-name">ARQUITETURA</h4></div>
+                    <div class="eco-full-text" style="display: none;">
+                        <h2 class="eco-info-title">ARQUITETURA DE <br><span class="gold-text">REQUISITOS.</span></h2>
+                        <p class="eco-info-text">O código aceita tudo; a realidade, não. Entrego à equipe técnica não um esboço, mas um ultimato lógico. 
+                        Traduzo ideias abstratas em requisitos binários, eliminando a margem para interpretação e erro.</p>
+                    </div>
+                </div>
+
+                <div class="eco-node node-left" onclick="updateEco(this)">
+                    <div class="node-box"><span class="node-id">03</span><h4 class="node-name">RETÓRICA</h4></div>
+                    <div class="connector-h"></div>
+                    <div class="eco-full-text" style="display: none;">
+                        <h2 class="eco-info-title">PODER DE <br><span class="gold-text">ESCUTA.</span></h2>
+                        <p class="eco-info-text">A técnica sem persuasão é muda. Utilizo a retórica para alinhar expectativas, desarmar resistências e 
+                        garantir que a solução correta seja não apenas entendida, mas desejada pelos stakeholders.</p>
+                    </div>
+                </div>
+
+                <div class="eco-node node-bottom" onclick="updateEco(this)">
+                    <div class="connector-v"></div>
+                    <div class="node-box"><span class="node-id">04</span><h4 class="node-name">TRADUÇÃO</h4></div>
+                    <div class="eco-full-text" style="display: none;">
+                        <h2 class="eco-info-title">TRADUÇÃO DE <br><span class="gold-text">MUNDOS.</span></h2>
+                        <p class="eco-info-text">O Negócio fala 'Dinheiro'; a Tech fala 'Dados'. Eu sou a intérprete que impede a Torre de Babel. 
+                        Converto frustração executiva em especificação técnica precisa. Onde havia ruído, instauro a clareza.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="eco-info-panel">
+                <div id="eco-dynamic-content">
+                    <h2 class="eco-info-title">ECOSSISTEMA <br><span class="gold-text">INTEGRADO.</span></h2>
+                    <p class="eco-info-text">Selecione um pilar ao lado para entender a minha visão multidisciplinar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-proof" id="proof">
+        <div class="proof-inner">
+            <header class="proof-header-refined">
+                <span class="chapter-num">IV. O RESULTADO DA PRECISÃO</span>
+                <h2 class="refined-title">CONSISTÊNCIA <span class="gold-serif">COMPROVADA.</span></h2>
+            </header>
+
+            <div class="metrics-horizontal-grid">
+                <div class="metric-column" data-index="0">
+                    <div class="metric-num-wrapper"><span class="m-number" data-target="15">0</span><span class="m-unit">TEMPO</span></div>
+                    <div class="m-content">
+                        <h4 class="m-label">DE MATURAÇÃO LÓGICA</h4>
+                        <p class="m-description">A senioridade não se mede pelo tempo de cargo, mas pela complexidade das crises resolvidas. 
+                        Uma trajetória forjada na trincheira de operações críticas, não em teorias de palco.</p>
+                    </div>
+                    <div class="m-progress-bg"><div class="m-progress-fill"></div></div>
+                </div>
+
+                <div class="metric-column" data-index="1">
+                    <div class="metric-num-wrapper"><span class="m-number" data-target="0">0</span><span class="m-unit">%</span></div>
+                    <div class="m-content">
+                        <h4 class="m-label">DE MARGEM PARA O ACASO</h4>
+                        <p class="m-description">O erro é uma falha de projeto. Operei ecossistemas de alta pressão com tolerância 
+                        zero para falhas logísticas ou contratuais. O meu padrão não é a tentativa, é a consistência.</p>
+                    </div>
+                    <div class="m-progress-bg"><div class="m-progress-fill"></div></div>
+                </div>
+
+                <div class="metric-column" data-index="2">
+                    <div class="metric-num-wrapper"><span class="m-number" data-target="100">0</span><span class="m-unit">K+</span></div>
+                    <div class="m-content">
+                        <h4 class="m-label">CAPITAL DE REPUTAÇÃO</h4>
+                        <p class="m-description">Liderança intelectual validada organicamente. Não busco seguidores, atraio mentes que 
+                        reconhecem que a autoridade técnica é a única moeda forte que resta no mercado.</p>
+                    </div>
+                    <div class="m-progress-bg"><div class="m-progress-fill"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-articles" id="articles">
+        <div class="articles-wrapper">
+            <header class="articles-header">
+                <span class="chapter-num">V. ARQUIVOS DE INTELIGÊNCIA</span>
+                <h2 class="massive-title">ESTUDOS DE <br><span class="gold-italic">CASO.</span></h2>
+            </header>
+
+            <div class="intel-terminal">
+                <nav class="intel-menu">
+                    <button class="menu-btn active" data-filter="all">TODOS</button>
+                    <button class="menu-btn" data-filter="tech">TECH</button>
+                    <button class="menu-btn" data-filter="business">NEGÓCIOS</button>
+                    <button class="menu-btn" data-filter="strategy">ESTRATÉGIA</button>
+                </nav>
+
+                <div class="intel-list" id="intel-list">
+                    
+                    <div class="intel-item" data-category="tech">
+                        <div class="intel-preview" onclick="openReading(this)">
+                            <h3>O DILEMA DO POLIÉSTER: O cliente acha que sabe o que precisa.</h3>
+                            <span style="color:#b8975a">→</span>
+                        </div>
+                        <div class="intel-full-text" style="display: none;">
+                            <h2>Por que atender ao pedido do cliente é, frequentemente, a maneira mais rápida de destruir o projeto.</h2>
+                            <p>No mundo corporativo, existe uma crença perigosa de que 'o cliente tem sempre razão'. A minha experiência 
+                            prova o contrário: o cliente tem a dor, mas raramente tem o diagnóstico.</p>
+                            <p>Certa vez, recebi uma encomenda massiva de blazers de poliéster para o Nordeste brasileiro. O pedido era claro, 
+                            o pagamento garantido. Um executor comum teria celebrado a venda. Eu vi o risco: poliéster em clima tropical não é 
+                            vestuário, é uma barreira térmica. Entregar aquele produto seria vender uma experiência de sufocamento, gerando 
+                            devolução e mancha na reputação.</p>
+                            <p>ntervim e reestruturei o pedido para linho e viscose. O resultado foi liquidez total e fidelização.</p>
+                            <br><p><strong>A Aplicação na Tecnologia:</strong></p>
+                            <p>Trago essa mesma Engenharia de Ceticismo para o software. Stakeholders pedem funcionalidades ('o poliéster') 
+                            baseados em achismos, ignorando a infraestrutura ou a jornada do usuário. O meu papel é auditar a solicitação, 
+                            vetar o desperdício e garantir que a equipe técnica construa apenas o que gera valor real. Eu protejo o capital do 
+                            cliente contra os seus próprios desejos equivocados.</p>
+                            <br><p><strong>O VEREDITO:</strong></p>
+                            <p>O cliente paga para ser contrariado. Se você aceita um pedido que sabe que vai falhar, você não é um parceiro, 
+                            é um cúmplice do prejuízo.</p>
+                        </div>
+                    </div>
+
+                    <div class="intel-item" data-category="business">
+                        <div class="intel-preview" onclick="openReading(this)">
+                            <h3>A Lógica da Zara: Por que o Estoque Parado é um Erro de Decisão.</h3>
+                            <span style="color:#b8975a">→</span>
+                        </div>
+                        <div class="intel-full-text" style="display: none;">
+                            <h2>Um sistema que apenas processa dados é um passivo. Tecnologia deve gerar liquidez.</h2>
+                            <p>Muitos analistas olham para um campo de 'preço' como um número num banco de dados. Eu olho 
+                            para ele como um gatilho de sobrevivência financeira.</p>
+                            <p>Aprendi com o modelo Fast Fashion que o estoque parado é a morte do fluxo de caixa. 
+                            Quando a Zara reduz um preço drasticamente, ela não está perdendo margem; ela está comprando 
+                            velocidade e liquidez. Ela entende que o custo de oportunidade do espaço ocupado é maior que 
+                            o desconto dado.</p>
+                            <br><p><strong>A Aplicação:</strong></p>
+                            <p>Transfiro essa mentalidade de varejo para a arquitetura de sistemas. Um software inchado, 
+                            com funcionalidades que ninguém usa, é 'estoque parado' digital — custa servidor, custa manutenção 
+                            e custa complexidade cognitiva. Desenho regras de negócio e gatilhos lógicos que forçam o sistema 
+                            a operar com a eficiência de um varejista de elite: rápido, enxuto e focado exclusivamente na conversão 
+                            de processos em resultado financeiro.</p>
+                            <br><p><strong>O VEREDITO:</strong></p>
+                            <p>Qualquer funcionalidade que não acelere o fluxo de caixa ou blinde a operação é apenas vaidade técnica. 
+                            Delete-a.</p>
+                        </div>
+                    </div>
+
+                    <div class="intel-item" data-category="strategy">
+                        <div class="intel-preview" onclick="openReading(this)">
+                            <h3>ALGORITMO DO CAPITAL ZERO (RISCO E ESCALA).</h3>
+                            <span style="color:#b8975a">→</span>
+                        </div>
+                        <div class="intel-full-text" style="display: none;">
+                            <h2>Como a precisão na entrega substitui a necessidade de investimento financeiro.</h2>
+                            <p>Escalar operações físicas tradicionalmente exige capital intensivo. Eu decidi contornar a regra. 
+                            Desenhei um modelo operacional onde a minha credibilidade técnica servia como garantia bancária.</p>
+                            <p>Ao estabelecer uma percepção de valor inquestionável e protocolos de entrega à prova de falhas (SLA 100%), 
+                            consegui que toda a cadeia — fornecedores e clientes, financiasse a operação. O capital girava antes da execução logística.</p>
+                            <br><p><strong>A Aplicação</strong></p>
+                            <p>Isso prova que a Previsibilidade é o ativo mais valioso de um mercado caótico. No desenvolvimento de soluções digitais, 
+                            aplico este princípio: crio ambientes de alta confiança e baixo risco, onde a arquitetura do projeto é tão sólida que a venda 
+                            e a adesão acontecem antes mesmo do deploy final. Quem domina a mitigação de riscos, domina o mercado.</p>
+                            <br><p><strong>O VEREDITO:</strong></p>
+                            <p>Promessas custam caro. Processos garantem lucro. 
+                            Quando a sua entrega é inquestionável, o mercado financia a sua expansão.</p>
+                        .</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="reading-overlay" id="reading-modal">
+            <div class="modal-content">
+                <button class="close-modal" onclick="closeReading()">FECHAR [X]</button>
+                <div id="modal-body"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-manifesto">
+        <div class="manifesto-bg-text">AUTORIDADE</div>
+        <div class="manifesto-container">
+            <blockquote class="massive-quote">
+                "O TOPO NÃO É UM DESTINO.  <br>
+                <span class="gold-italic">É O MEU PADRÃO DE OPERAÇÃO."</span>
+            </blockquote>
+            <div class="quote-line"></div>
+        </div>
+    </section>
+
+    <footer class="main-site-footer" id="contact">
+        <div class="footer-container">
+            <div class="footer-cta-center">
+                <span class="chapter-num">VII. CONTATO</span>
+                <div class="footer-intro-text" style="margin-bottom: 2rem; opacity: 0.7; font-family: 'Space Grotesk';">
+                    Se você busca um executor silencioso, não sou a pessoa certa. <br>
+                    Se você busca uma mente estratégica capaz de redesenhar sua lógica de operação e garantir que a tecnologia 
+                    sirva ao negócio (e não o contrário), o diálogo começa agora.
+                </div>
+                <a href="mailto:contato@jaquelinedaniel.com" class="button-cta-luxury">
+                    SOLICITAR DIAGNÓSTICO
+                </a>
+            </div>
+            <div class="social-icons-wrapper">
+                <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="footer-credits">
+                <div class="credits-line"></div>
+                <p class="copyright-center">© 2026 JAQUELINE DANIEL. // ESTRUTURA É PODER.</p>
+                <p class="status-sub">SISTEMA OPERACIONAL // ENGENHARIA DE RESULTADOS</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
