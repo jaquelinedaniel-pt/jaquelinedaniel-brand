@@ -2,9 +2,13 @@
 
 > "O caos é matéria-prima. Eu sou a estrutura."
 
+<p align="center">
+  <img src="assets/site.png" width="800" alt="Preview do Site Jaqueline Daniel">
+</p>
+
 Este repositório contém o código-fonte do meu site pessoal e Dossiê de Autoridade. Mais do que um portfólio tradicional, este projeto foi arquitetado para ser uma **ferramenta de posicionamento estratégico**, projetada para refletir a intersecção entre a Visão Executiva (Negócios) e a Engenharia de Software (Tech).
 
-🔗 **[Visualizar o Projeto em Produção](https://seusite.com.br)** *(Substitua pelo seu link)*
+🔗 **[Visualizar o Projeto em Produção](https://www.jaquelinedaniel.com)**
 
 ---
 
