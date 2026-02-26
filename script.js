@@ -72,14 +72,15 @@ function updateEco(element) {
 }
 
 /* =========================================
-   ANIMAÇÃO DOS NÚMEROS
+   ANIMAÇÃO DOS NÚMEROS (CORRIGIDO PARA O CELULAR)
    ========================================= */
 const proofObserver = new IntersectionObserver((entries) => {
+    // Reduzido o threshold para 0.2: inicia a animação assim que o topo da seção aparece
     if (entries[0].isIntersecting) {
         animateRefinedProof();
         proofObserver.unobserve(entries[0].target);
     }
-}, { threshold: 0.6 });
+}, { threshold: 0.2 }); 
 
 function animateRefinedProof() {
     const columns = document.querySelectorAll('.metric-column');
