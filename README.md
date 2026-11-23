@@ -1,8 +1,9 @@
 <div align="center">
 
-<img src="assets/JD_champagne.svg" alt="Monograma Jaqueline Daniel" width="46">
+<h1>
+  <img src="assets/JD_champagne.svg" alt="" width="30" align="absmiddle">  JAQUELINE DANIEL
+</h1>
 
-# JAQUELINE DANIEL
 ### Análise de Negócios · Análise Funcional · Processos
 
 > *"Compreender precede transformar."*
@@ -21,9 +22,9 @@
 
 ## Visão Geral
 
-Repositório oficial do site pessoal e posicionamento profissional de **Jaqueline Daniel**, concebido sob direção de arte editorial minimalista para conectar dois perfis de visita sem ruído: **recrutadores de tecnologia** e **decisores de negócio**.
+Repositório oficial do site pessoal e posicionamento profissional de **Jaqueline Daniel**, concebido sob direção de arte editorial minimalista.
 
-Em vez de apresentar listas genéricas de ferramentas fora de contexto, a arquitetura da página conduz a leitura em sete atos progressivos — do diagnóstico de falhas operacionais ao método de investigação, princípios de decisão, evidências aplicadas em campo e teses autorais.
+Em vez de apresentar listas genéricas de ferramentas fora de contexto, a arquitetura da página conduz a leitura em sete atos progressivos, do diagnóstico de falhas operacionais ao método de investigação, princípios de decisão, evidências aplicadas em campo e teses autorais.
 
 ---
 
@@ -89,12 +90,34 @@ Desenvolvido em **Vanilla Stack (HTML5, CSS3, ES6+)** sem frameworks pesados par
 ├── style.css                                   # Design System, animações e responsividade
 ├── script.js                                   # Interações, dados dos dossiês e acessibilidade
 └── README.md                                   # Documentação técnica do repositório
+```
+
 
 ## Repositórios Relacionados
-dourovinhos-mobile-sales — Especificação funcional completa (BPMN 2.0, SRS, Gherkin, plano UAT) e protótipo MVP Offline-First.
 
-winwin-product-portfolio — Documentação de discovery, regras de negócio e critério de encerramento de produto próprio.
+> **[`dourovinhos-mobile-sales`](https://github.com/jaquelinedaniel-pt/dourovinhos-mobile-sales)** — **Análise Funcional & Arquitetura Offline-First**  
+> Especificação funcional completa (BPMN 2.0, SRS, Gherkin e plano UAT) e protótipo MVP construídos a partir de um cenário real de distribuição de vinhos em campo.
 
-Jaqueline Daniel · Porto, Portugal
+> **[`winwin-product-portfolio`](https://github.com/jaquelinedaniel-pt/winwin-product-portfolio)** — **Product Discovery & Critério de Corte**  
+> Documentação de discovery, regras de negócio (economia dual-token e Lazy Audit) e decisão consciente de encerramento de produto próprio.
 
-LinkedIn · GitHub · jaquelinedaniel.pt@gmail.com
+---
+
+<br>
+
+<div align="center">
+
+<img src="assets/JD_assinatura_compacta_claro_transparente.png" alt="Assinatura Jaqueline Daniel" width="260">
+
+<br><br>
+
+**Análise de Negócios · Análise Funcional · Processos**  
+Porto, Portugal
+
+<br>
+
+[![Site Oficial](https://img.shields.io/badge/SITE_OFICIAL-www.jaquelinedaniel.com-E2C99E?style=for-the-badge&labelColor=050507)](https://www.jaquelinedaniel.com)
+[![LinkedIn](https://img.shields.io/badge/LINKEDIN-Jaqueline_Daniel-1E232B?style=for-the-badge&logo=linkedin&logoColor=E2C99E)](https://linkedin.com/in/jaquelinedaniel-pt)
+[![E-mail](https://img.shields.io/badge/E--MAIL-jaquelinedaniel.pt%40gmail.com-1E232B?style=for-the-badge&logo=gmail&logoColor=FFF7E8)](mailto:jaquelinedaniel.pt@gmail.com)
+
+</div>
