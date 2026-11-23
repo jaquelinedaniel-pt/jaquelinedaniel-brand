@@ -109,7 +109,6 @@ Desenvolvido em **Vanilla Stack (HTML5, CSS3, ES6+)** sem frameworks pesados par
 
 <img src="assets/JD_assinatura_compacta_claro_transparente.png" alt="Assinatura Jaqueline Daniel" width="260">
 
-<br><br>
 
 **Análise de Negócios · Análise Funcional · Processos**  
 Porto, Portugal
