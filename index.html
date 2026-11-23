@@ -1,348 +1,953 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JAQUELINE DANIEL | Estrategista de Operações & Tech</title>
+    <meta name="theme-color" content="#050507">
+
+    <!-- SEO PRIMÁRIO -->
+    <title>Jaqueline Daniel — Análise de Negócios, Análise Funcional e Processos</title>
+    <meta name="description" content="Análise de Negócios, Análise Funcional e Processos. Mais de 15 anos de operação real traduzidos em requisitos claros, fluxos íntegros e decisões sustentáveis.">
+    <meta name="author" content="Jaqueline Daniel">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jaquelinedaniel.com">
+
+    <!-- FAVICON ADAPTATIVO (MODO CLARO + MODO ESCURO) -->
+    <link rel="icon" type="image/svg+xml" href="assets/JD_carvao.svg" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/svg+xml" href="assets/JD_champagne.svg" media="(prefers-color-scheme: dark)">
+    <link rel="apple-touch-icon" href="assets/JD_dourado_referencia_transparente.png">
+
+    <!-- OPEN GRAPH (LINKEDIN, WHATSAPP, SLACK) -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:url" content="https://jaquelinedaniel.com">
+    <meta property="og:site_name" content="Jaqueline Daniel">
+    <meta property="og:title" content="Jaqueline Daniel — Análise de Negócios, Análise Funcional e Processos">
+    <meta property="og:description" content="Compreender precede transformar. Análise de negócios, análise funcional e processos conectando operação real e engenharia.">
+    <meta property="og:image" content="https://jaquelinedaniel.com/assets/og-cover.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- TWITTER / X CARD -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jaqueline Daniel — Análise de Negócios, Análise Funcional e Processos">
+    <meta name="twitter:description" content="Compreender precede transformar. Análise de negócios, análise funcional e processos conectando operação real e engenharia.">
+    <meta name="twitter:image" content="https://jaquelinedaniel.com/assets/og-cover.jpg">
+
+    <!-- PERFORMANCE DE FONTES (PRECONNECT + SWAP) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Grotesk:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- CSS PRINCIPAL -->
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Space+Grotesk:wght@300;500&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- DADOS ESTRUTURADOS (SEO SEMÂNTICO — SCHEMA PERSON) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Jaqueline Daniel",
+        "jobTitle": "Analista de Negócios & Analista Funcional",
+        "url": "https://jaquelinedaniel.com",
+        "email": "mailto:jaquelinedaniel.pt@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Porto",
+            "addressCountry": "PT"
+        },
+        "sameAs": [
+            "https://github.com/jaquelinedaniel-pt",
+            "https://linkedin.com/in/jaquelinedaniel-pt",
+            "https://instagram.com/jaquelinedaniel.pt"
+        ]
+    }
+    </script>
 </head>
+
 <body class="loading">
 
-    <div class="analog-grain"></div>
+    <div class="analog-grain" aria-hidden="true"></div>
 
-    <nav class="side-nav">
-        <a href="#home" class="nav-dot active" data-label="I. HOME"></a>
-        <a href="#about" class="nav-dot" data-label="II. TRAJETÓRIA"></a>
-        <a href="#hub" class="nav-dot" data-label="III. METODOLOGIA"></a>
-        <a href="#ecosystem" class="nav-dot" data-label="IV. SISTEMA"></a>
-        <a href="#proof" class="nav-dot" data-label="V. TRACK RECORD"></a>
-        <a href="#articles" class="nav-dot" data-label="VI. ARQUIVOS"></a>
-        <a href="#contact" class="nav-dot" data-label="VII. CONTATO"></a>
+    <nav class="side-nav" aria-label="Navegação por seções">
+        <a href="#home" class="nav-dot active" data-label="I. HOME" aria-label="Ir para Home"></a>
+        <a href="#about" class="nav-dot" data-label="II. DIAGNÓSTICO" aria-label="Ir para Diagnóstico"></a>
+        <a href="#hub" class="nav-dot" data-label="III. CRITÉRIOS" aria-label="Ir para Critérios de Atuação"></a>
+        <a href="#ecosystem" class="nav-dot" data-label="IV. PRINCÍPIOS" aria-label="Ir para Princípios"></a>
+        <a href="#proof" class="nav-dot" data-label="V. EVIDÊNCIAS" aria-label="Ir para Evidências Aplicadas"></a>
+        <a href="#articles" class="nav-dot" data-label="VI. DOSSIÊS" aria-label="Ir para Dossiês"></a>
+        <a href="#contact" class="nav-dot" data-label="VII. CONTATO" aria-label="Ir para Contato"></a>
     </nav>
 
-    <div class="metadata top-right">ANÁLISE ESTRATÉGICA // RESOLUÇÃO DE PROBLEMAS</div>
-    
-    <div class="home-logic-statement">
-        O caos é o subproduto da <br> 
-        execução sem critério. <br>
-        Executar sem diagnosticar <br>
-        é apenas acelerar o erro
-    </div>
-
+    <!-- =========================================
+         SEÇÃO 1: HERO EM 2 ATOS + ACABAMENTO ATELIER
+         ========================================= -->
     <main class="sculpture-container" id="home">
-        <h1 class="name-sculpture reveal">JAQUELINE<br>DANIEL</h1>
-        <div class="portrait-container">
-            <img src="assets/hero.png" alt="Jaqueline Daniel" class="hero-image">
+        <div class="hero-bg-wrapper" aria-hidden="true">
+            <div class="hero-bg-overlay"></div>
+            <img src="assets/background_hero.png" alt="" class="hero-bg-image" fetchpriority="high">
         </div>
-        <div class="manifesto-layer">
-            <p class="manifesto-text">"O CAOS É MATÉRIA-PRIMA. EU SOU A ESTRUTURA."</p>
-            <div class="scroll-hint">SCROLL // DESVENDAR A LÓGICA</div>
+
+        <h1 class="name-sculpture reveal">
+            <span class="first-name">JAQUELINE</span><br>
+            <span class="last-name">DANIEL</span>
+        </h1>
+
+        <div class="portrait-container">
+            <img src="assets/hero.png" alt="Retrato de Jaqueline Daniel" class="hero-image" fetchpriority="high">
+        </div>
+
+        <div class="hero-act2-scrim" aria-hidden="true"></div>
+
+        <header class="atelier-topbar">
+            <div class="atelier-identity">
+                <img src="assets/JD_dourado_referencia_transparente.png" alt="Monograma Jaqueline Daniel" class="atelier-monogram-img">
+                <span class="atelier-brand">JAQUELINE DANIEL</span>
+            </div>
+
+            <span class="atelier-hairline" aria-hidden="true"></span>
+
+            <nav class="atelier-top-links" aria-label="Acesso rápido">
+                <a href="https://jaquelinedaniel-pt.github.io/portfolio-v3/" target="_blank" rel="noopener noreferrer" class="atelier-top-link">
+                    PORTFÓLIO <span aria-hidden="true">↗</span>
+                </a>
+                <span class="atelier-top-dot" aria-hidden="true">·</span>
+                <a href="#contact" class="atelier-top-link">CONTATO</a>
+            </nav>
+        </header>
+
+        <div class="hero-editorial-panel">
+            <span class="atelier-eyebrow">I. NEGÓCIO, PROCESSOS & TECNOLOGIA</span>
+
+            <h2 class="atelier-thesis">
+                <span class="t-top">COMPREENDER PRECEDE</span>
+                <span class="t-accent">TRANSFORMAR.</span>
+            </h2>
+
+            <div class="atelier-connector" aria-hidden="true"></div>
+
+            <div class="atelier-lower-row">
+                <p class="atelier-anchor">
+                    Entre a intenção de um negócio, o comportamento de quem opera e a tecnologia que o sustenta, existe um território onde decisões se perdem ou ganham forma.
+                </p>
+
+                <div class="atelier-roles" aria-label="Áreas de atuação">
+                    <span class="atelier-roles-dot" aria-hidden="true"></span>
+                    <span class="atelier-roles-text">
+                        ANÁLISE DE NEGÓCIOS <span class="role-sep" aria-hidden="true">|</span>
+                        ANÁLISE FUNCIONAL <span class="role-sep" aria-hidden="true">|</span>
+                        PROCESSOS
+                    </span>
+                </div>
+
+                <a href="#about" class="atelier-seal" aria-label="Explorar o diagnóstico">
+                    <svg viewBox="0 0 120 120" class="atelier-seal-svg" aria-hidden="true">
+                        <defs>
+                            <path id="atelierSealPath" d="M 60, 60 m -44, 0 a 44,44 0 1,1 88,0 a 44,44 0 1,1 -88,0"/>
+                        </defs>
+                        <text fill="#E2C99E" font-size="8.2" letter-spacing="3.4" font-family="Space Grotesk, sans-serif">
+                            <textPath href="#atelierSealPath">EXPLORAR DIAGNÓSTICO • EXPLORAR • </textPath>
+                        </text>
+                    </svg>
+                    <span class="atelier-seal-arrow" aria-hidden="true">↓</span>
+                </a>
+            </div>
         </div>
     </main>
 
-    <section class="section-genesis" id="about">
-        <div class="genesis-magazine-grid">
-            <div class="magazine-text">
-                <span class="chapter-num">II. A EVOLUÇÃO DA ESCALA</span>
-                <h2 class="magazine-title">A EVOLUÇÃO DA <span class="gold-serif">SOLUÇÃO.</span></h2>
-                
-                <p class="magazine-lead">
-                    Minha trajetória não é uma transição de carreira, é uma progressão lógica. Do varejo de 
-                    alta rotatividade ao atacado de alta complexidade, eu não apenas geri operações. 
-                    Eu modelei ecossistemas onde o rigor logístico era a única métrica de sobrevivência.
+    <!-- =========================================
+         SEÇÃO 2: DIAGNÓSTICO // SPATIAL GLASS
+         ========================================= -->
+    <section class="section-container" id="about" aria-labelledby="diag-heading">
+        <div class="section-bg-wrapper" aria-hidden="true">
+            <div class="section-bg-overlay"></div>
+            <img src="assets/section_2.png" alt="" class="section-bg-image" loading="lazy">
+        </div>
+
+        <div class="section-content">
+            <header class="section-header">
+                <span class="section-kicker">II. ARQUITETURA DE DECISÃO // DIAGNÓSTICO</span>
+                <h2 class="section-title" id="diag-heading">
+                    A ANATOMIA DO <br>
+                    <span class="highlight-champagne">ERRO OPERACIONAL</span>
+                </h2>
+                <p class="section-subtitle">
+                    Passe o cursor para pausar o fluxo e clique em qualquer tese para expandir a análise.
                 </p>
-                
-                <div class="magazine-body">
-                    <p>Hoje, atuo no ponto cego entre o Board de Negócios e a Equipe Técnica. Eu sou a 
-                    intérprete que converte dores operacionais em requisitos de software de alta precisão.</p>
-                    <p>No meu mundo, a tecnologia não é o fim, é o braço armado de uma estratégia bem desenhada. 
-                    Eu não entrego código. Entrego a solução do problema que o código, sozinho, jamais resolveria.</p>
-                    <p class="gold-quote">"O mercado está saturado de executores que entregam exatamente o que o cliente acha que precisa. Sem diagnosticar e escutar o que não foi dito. E é exatamente por isso que os projetos falham"</p>
-                </div>
-            </div>
-
-            <div class="magazine-visual">
-                <div class="magazine-card">
-                    <div class="photo-container">
-                        <img src="assets/foto-profissional.jpg" alt="Jaqueline Daniel Editorial">
-                        <div class="photo-caption">JAQUELINE DANIEL // ESTRATEGISTA</div>
-                    </div>
-                    <div class="card-accent"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section-hub" id="hub">
-        <div class="hub-layout">
-            <div class="hub-sidebar">
-                <span class="chapter-num">III. ARQUITETURA DE SOLUÇÃO</span>
-                <h2 class="massive-outline-side">O Método para <span class="gold-italic">o Valor.</span></h2>
-                
-                <div class="method-flow">
-                    <div class="flow-step">
-                        <span class="step-dot"></span>
-                        <span class="step-name">ESCUTA</span>
-                    </div>
-                    <div class="flow-line"></div>
-                    <div class="flow-step">
-                        <span class="step-dot"></span>
-                        <span class="step-name">DIAGNÓSTICO</span>
-                    </div>
-                    <div class="flow-line"></div>
-                    <div class="flow-step">
-                        <span class="step-dot"></span>
-                        <span class="step-name">SOLUÇÃO</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="hub-content">
-                <div class="trigger-box" onclick="openPillar(this)">
-                    <span class="t-num">01</span>
-                    <h3 class="t-title">O DIAGNÓSTICO IMPLACÁVEL</h3>
-                    <div class="t-btn">DESVENDAR</div>
-                    <div class="pillar-full-text" style="display: none;">
-                        <h2 class="modal-title">ALÉM DO PEDIDO <span class="modal-subtitle">(A Tirania do Pedido)</span></h2>
-                        <p class="modal-text">Executar um pedido sem questionar a necessidade é um erro financeiro. Minha metodologia aplica a Engenharia de Necessidade: uma triagem que confronta o desejo do stakeholder com a realidade do mercado. Eu impeço o desperdício de capital em soluções tecnicamente perfeitas, mas comercialmente inúteis.</p>
-                    </div>
-                </div>
-
-                <div class="trigger-box" onclick="openPillar(this)">
-                    <span class="t-num">02</span>
-                    <h3 class="t-title">ARQUITETURA DE VIABILIDADE</h3>
-                    <div class="t-btn">DESVENDAR</div>
-                    <div class="pillar-full-text" style="display: none;">
-                        <h2 class="modal-title">O Algoritmo do Lucro <span class="modal-subtitle">(Visão de Negócio)</span></h2>
-                        <p class="modal-text">Toda solução tecnológica deve ser uma função do fluxo de caixa. Minha visão é enraizada no P&L (Profit and Loss). Antes da primeira linha de código, calculo o impacto operacional, a escalabilidade e o retorno real. Se não gera eficiência ou lucro, não deve ser construído.</p>
-                    </div>
-                </div>
-
-                <div class="trigger-box" onclick="openPillar(this)">
-                    <span class="t-num">03</span>
-                    <h3 class="t-title">ORATÓRIA E INFLUÊNCIA</h3>
-                    <div class="t-btn">DESVENDAR</div>
-                    <div class="pillar-full-text" style="display: none;">
-                        <h2 class="modal-title">O Protocolo de Alinhamento <span class="modal-subtitle">(Persuasão)</span></h2>
-                        <p class="modal-text">Projetos morrem no ruído entre a expectativa e a entrega. Utilizo técnicas de negociação de alta performance e psicologia cognitiva para alinhar os interesses do cliente e a capacidade da técnica.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="expansion-overlay" class="expansion-overlay">
-            <div class="glass-card-monumental">
-                <button class="close-card" onclick="closePillar()">✕ FECHAR</button>
-                <div id="card-content"></div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section-ecosystem" id="ecosystem">
-        <div class="ecosystem-wrapper">
-            <div class="eco-diagram">
-                <div class="core-node"><span class="core-text">RESULTADO</span></div>
-                
-                <div class="eco-node node-top" onclick="updateEco(this)">
-                    <div class="node-box"><span class="node-id">01</span><h4 class="node-name">VIABILIDADE</h4></div>
-                    <div class="connector-v"></div>
-                    <div class="eco-full-text" style="display: none;">
-                        <h2 class="eco-info-title">VISÃO <br><span class="gold-text">ANALÍTICA.</span></h2>
-                        <p class="eco-info-text">Não analiso cenários, calculo viabilidade. O problema nunca é apenas o software; é o 'sangramento' financeiro causado por processos ineficientes. Eu estanco a perda antes de desenhar a tecnologia.</p>
-                    </div>
-                </div>
-
-                <div class="eco-node node-right" onclick="updateEco(this)">
-                    <div class="connector-h"></div>
-                    <div class="node-box"><span class="node-id">02</span><h4 class="node-name">ARQUITETURA</h4></div>
-                    <div class="eco-full-text" style="display: none;">
-                        <h2 class="eco-info-title">ARQUITETURA DE <br><span class="gold-text">REQUISITOS.</span></h2>
-                        <p class="eco-info-text">O código aceita tudo; a realidade, não. Entrego à equipe técnica não um esboço, mas um ultimato lógico. Traduzo ideias abstratas em requisitos binários, eliminando a margem para interpretação e erro.</p>
-                    </div>
-                </div>
-
-                <div class="eco-node node-left" onclick="updateEco(this)">
-                    <div class="node-box"><span class="node-id">03</span><h4 class="node-name">RETÓRICA</h4></div>
-                    <div class="connector-h"></div>
-                    <div class="eco-full-text" style="display: none;">
-                        <h2 class="eco-info-title">PODER DE <br><span class="gold-text">ESCUTA.</span></h2>
-                        <p class="eco-info-text">A técnica sem persuasão é muda. Utilizo a retórica para alinhar expectativas, desarmar resistências e garantir que a solução correta seja não apenas entendida, mas desejada pelos stakeholders.</p>
-                    </div>
-                </div>
-
-                <div class="eco-node node-bottom" onclick="updateEco(this)">
-                    <div class="connector-v"></div>
-                    <div class="node-box"><span class="node-id">04</span><h4 class="node-name">TRADUÇÃO</h4></div>
-                    <div class="eco-full-text" style="display: none;">
-                        <h2 class="eco-info-title">TRADUÇÃO DE <br><span class="gold-text">MUNDOS.</span></h2>
-                        <p class="eco-info-text">O Negócio fala 'Dinheiro'; a Tech fala 'Dados'. Eu sou a intérprete que impede a Torre de Babel. Converto frustração executiva em especificação técnica precisa. Onde havia ruído, instauro a clareza.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="eco-info-panel">
-                <div id="eco-dynamic-content">
-                    <h2 class="eco-info-title">ECOSSISTEMA <br><span class="gold-text">INTEGRADO.</span></h2>
-                    <p class="eco-info-text">Selecione um pilar ao lado para entender a minha visão multidisciplinar.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section-proof" id="proof">
-        <div class="proof-inner">
-            <header class="proof-header-refined">
-                <span class="chapter-num">IV. O RESULTADO DA PRECISÃO</span>
-                <h2 class="refined-title">CONSISTÊNCIA <span class="gold-serif">COMPROVADA.</span></h2>
             </header>
 
-            <div class="metrics-horizontal-grid">
-                <div class="metric-column" data-index="0">
-                    <div class="metric-num-wrapper"><span class="m-number" data-target="15">0</span><span class="m-unit">TEMPO</span></div>
-                    <div class="m-content">
-                        <h4 class="m-label">DE MATURAÇÃO LÓGICA</h4>
-                        <p class="m-description">A senioridade não se mede pelo tempo de cargo, mas pela complexidade das crises resolvidas. Uma trajetória forjada na trincheira de operações críticas, não em teorias de palco.</p>
+            <div class="spatial-carousel-viewport" id="spatialViewport">
+                <div class="spatial-track" id="spatialTrack">
+                    <!-- BLOCO 1 (01 -> 04) -->
+                    <article class="spatial-card" data-thesis="01" role="button" tabindex="0" aria-label="Expandir análise 01: A Ilusão da Velocidade">
+                        <div class="card-glass-specular" aria-hidden="true"></div>
+                        <div class="card-header">
+                            <span class="card-number">01</span>
+                            <span class="card-tag">EXECUÇÃO & RETRABALHO</span>
+                        </div>
+                        <h3 class="card-title">A ILUSÃO DA VELOCIDADE</h3>
+                        <p class="card-summary">Começar a construir antes de fechar o que precisa ser resolvido cobra caro lá na frente. O tempo ganho no início vira retrabalho na entrega.</p>
+                        <div class="card-action" aria-hidden="true">
+                            <span>EXPANDIR ANÁLISE</span>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                        </div>
+                    </article>
+
+                    <article class="spatial-card" data-thesis="02" role="button" tabindex="0" aria-label="Expandir análise 02: Capacidade sem Fluxo">
+                        <div class="card-glass-specular" aria-hidden="true"></div>
+                        <div class="card-header">
+                            <span class="card-number">02</span>
+                            <span class="card-tag">FLUXO & EXECUÇÃO</span>
+                        </div>
+                        <h3 class="card-title">CAPACIDADE SEM FLUXO</h3>
+                        <p class="card-summary">Colocar mais gente ou mais sistema em cima de um processo quebrado só faz o gargalo crescer mais rápido.</p>
+                        <div class="card-action" aria-hidden="true">
+                            <span>EXPANDIR ANÁLISE</span>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                        </div>
+                    </article>
+
+                    <article class="spatial-card highlight-card" data-thesis="03" role="button" tabindex="0" aria-label="Expandir análise 03: Clareza Antes da Ação">
+                        <div class="card-glass-specular" aria-hidden="true"></div>
+                        <div class="card-header">
+                            <span class="card-number">03</span>
+                            <span class="card-tag highlight-tag">DEFINIÇÃO DO PROBLEMA</span>
+                        </div>
+                        <h3 class="card-title">CLAREZA ANTES DA AÇÃO</h3>
+                        <p class="card-summary">Atender um pedido de ferramenta como se fosse um diagnóstico gera entregas impecáveis que não mudam nada no resultado.</p>
+                        <div class="card-action" aria-hidden="true">
+                            <span>EXPANDIR ANÁLISE</span>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                        </div>
+                    </article>
+
+                    <article class="spatial-card" data-thesis="04" role="button" tabindex="0" aria-label="Expandir análise 04: Decisão sob Incerteza">
+                        <div class="card-glass-specular" aria-hidden="true"></div>
+                        <div class="card-header">
+                            <span class="card-number">04</span>
+                            <span class="card-tag">RISCO & PREMISSAS</span>
+                        </div>
+                        <h3 class="card-title">DECISÃO SOB INCERTEZA</h3>
+                        <p class="card-summary">Decidir sem ter todas as respostas faz parte de qualquer negócio. O erro começa quando suposições entram na mesa com peso de fato.</p>
+                        <div class="card-action" aria-hidden="true">
+                            <span>EXPANDIR ANÁLISE</span>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                        </div>
+                    </article>
+
+                    <!-- BLOCO 2 (LOOP VISUAL SINCRONIZADO — OCULTO PARA LEITORES DE TELA) -->
+                    <article class="spatial-card" data-thesis="01" aria-hidden="true">
+                        <div class="card-glass-specular"></div>
+                        <div class="card-header"><span class="card-number">01</span><span class="card-tag">EXECUÇÃO & RETRABALHO</span></div>
+                        <h3 class="card-title">A ILUSÃO DA VELOCIDADE</h3>
+                        <p class="card-summary">Começar a construir antes de fechar o que precisa ser resolvido cobra caro lá na frente. O tempo ganho no início vira retrabalho na entrega.</p>
+                        <div class="card-action"><span>EXPANDIR ANÁLISE</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></div>
+                    </article>
+
+                    <article class="spatial-card" data-thesis="02" aria-hidden="true">
+                        <div class="card-glass-specular"></div>
+                        <div class="card-header"><span class="card-number">02</span><span class="card-tag">FLUXO & EXECUÇÃO</span></div>
+                        <h3 class="card-title">CAPACIDADE SEM FLUXO</h3>
+                        <p class="card-summary">Colocar mais gente ou mais sistema em cima de um processo quebrado só faz o gargalo crescer mais rápido.</p>
+                        <div class="card-action"><span>EXPANDIR ANÁLISE</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></div>
+                    </article>
+
+                    <article class="spatial-card highlight-card" data-thesis="03" aria-hidden="true">
+                        <div class="card-glass-specular"></div>
+                        <div class="card-header"><span class="card-number">03</span><span class="card-tag highlight-tag">DEFINIÇÃO DO PROBLEMA</span></div>
+                        <h3 class="card-title">CLAREZA ANTES DA AÇÃO</h3>
+                        <p class="card-summary">Atender um pedido de ferramenta como se fosse um diagnóstico gera entregas impecáveis que não mudam nada no resultado.</p>
+                        <div class="card-action"><span>EXPANDIR ANÁLISE</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></div>
+                    </article>
+
+                    <article class="spatial-card" data-thesis="04" aria-hidden="true">
+                        <div class="card-glass-specular"></div>
+                        <div class="card-header"><span class="card-number">04</span><span class="card-tag">RISCO & PREMISSAS</span></div>
+                        <h3 class="card-title">DECISÃO SOB INCERTEZA</h3>
+                        <p class="card-summary">Decidir sem ter todas as respostas faz parte de qualquer negócio. O erro começa quando suposições entram na mesa com peso de fato.</p>
+                        <div class="card-action"><span>EXPANDIR ANÁLISE</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- CONTROLE ACESSÍVEL DE PAUSA/RETOMADA DO FLUXO -->
+            <div class="spatial-controls">
+                <button type="button" class="spatial-ctrl-btn" id="spatialToggleBtn" aria-pressed="false">
+                    PAUSAR FLUXO
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         SEÇÃO 3: METODOLOGIA // PALCO ASSIMÉTRICO
+         ========================================= -->
+    <section class="method-section" id="hub" aria-labelledby="method-heading">
+        <div class="method-bg-wrapper" aria-hidden="true">
+            <div class="method-bg-overlay"></div>
+            <img src="assets/section_3.png" alt="" class="method-bg-image" loading="lazy">
+        </div>
+
+        <div class="method-ambient-glow" aria-hidden="true"></div>
+
+        <div class="method-container">
+            <div class="method-grid">
+                <div class="method-left">
+                    <header class="method-header">
+                        <span class="method-kicker">III. FORMA DE PENSAR // ATUAR</span>
+                        <h2 class="method-title" id="method-heading">
+                            CRITÉRIOS <br>
+                            <span class="method-champagne">DE ATUAÇÃO</span>
+                        </h2>
+                        <p class="method-lead">
+                            Quatro frentes de trabalho para tirar o problema da superfície antes de decidir ou desenvolver.
+                        </p>
+                    </header>
+
+                    <div class="method-nav" role="tablist" aria-label="Etapas da Metodologia">
+                        <button class="method-tab active" role="tab" aria-selected="true" data-step="01" type="button">
+                            <span class="tab-num">01</span>
+                            <div class="tab-meta">
+                                <span class="tab-title">INVESTIGAÇÃO DE EVIDÊNCIAS</span>
+                                <span class="tab-sub">Separar o que é fato do que é apenas versão.</span>
+                            </div>
+                            <span class="tab-arrow" aria-hidden="true">→</span>
+                        </button>
+
+                        <button class="method-tab" role="tab" aria-selected="false" data-step="02" type="button">
+                            <span class="tab-num">02</span>
+                            <div class="tab-meta">
+                                <span class="tab-title">INTEGRIDADE DO FLUXO</span>
+                                <span class="tab-sub">Ver o caminho real antes de acelerar a entrega.</span>
+                            </div>
+                            <span class="tab-arrow" aria-hidden="true">→</span>
+                        </button>
+
+                        <button class="method-tab" role="tab" aria-selected="false" data-step="03" type="button">
+                            <span class="tab-num">03</span>
+                            <div class="tab-meta">
+                                <span class="tab-title">TRADUÇÃO OPERACIONAL</span>
+                                <span class="tab-sub">Fazer negócio e engenharia falarem a mesma língua.</span>
+                            </div>
+                            <span class="tab-arrow" aria-hidden="true">→</span>
+                        </button>
+
+                        <button class="method-tab" role="tab" aria-selected="false" data-step="04" type="button">
+                            <span class="tab-num">04</span>
+                            <div class="tab-meta">
+                                <span class="tab-title">ESCOPO & TRANSPARÊNCIA</span>
+                                <span class="tab-sub">Deixar claro o que entra, o que sai e o custo de mudar.</span>
+                            </div>
+                            <span class="tab-arrow" aria-hidden="true">→</span>
+                        </button>
                     </div>
-                    <div class="m-progress-bg"><div class="m-progress-fill"></div></div>
                 </div>
 
-                <div class="metric-column" data-index="1">
-                    <div class="metric-num-wrapper"><span class="m-number" data-target="0">0</span><span class="m-unit">%</span></div>
-                    <div class="m-content">
-                        <h4 class="m-label">DE MARGEM PARA O ACASO</h4>
-                        <p class="m-description">O erro é uma falha de projeto. Operei ecossistemas de alta pressão com tolerância zero para falhas logísticas ou contratuais. O meu padrão não é a tentativa, é a consistência.</p>
-                    </div>
-                    <div class="m-progress-bg"><div class="m-progress-fill"></div></div>
-                </div>
+                <div class="method-right">
+                    <div class="method-glass-stage" id="methodStage" role="tabpanel">
+                        <div class="stage-specular" aria-hidden="true"></div>
+                        <span class="stage-watermark" id="stageWatermark" aria-hidden="true">01</span>
 
-                <div class="metric-column" data-index="2">
-                    <div class="metric-num-wrapper"><span class="m-number" data-target="100">0</span><span class="m-unit">K+</span></div>
-                    <div class="m-content">
-                        <h4 class="m-label">CAPITAL DE REPUTAÇÃO</h4>
-                        <p class="m-description">Liderança intelectual validada organicamente. Não busco seguidores, atraio mentes que reconhecem que a autoridade técnica é a única moeda forte que resta no mercado.</p>
+                        <div class="stage-content" id="stageContent">
+                            <div class="stage-top-bar">
+                                <span class="stage-protocol-tag" id="stageTag">CAMADA 01 // INVESTIGAÇÃO DE EVIDÊNCIAS</span>
+                                <span class="stage-indicator">
+                                    <span class="indicator-dot" aria-hidden="true"></span> ATIVO
+                                </span>
+                            </div>
+
+                            <h3 class="stage-headline" id="stageHeadline">INVESTIGAÇÃO DE EVIDÊNCIAS</h3>
+                            <p class="stage-thesis" id="stageThesis">
+                                Toda análise começa olhando para o que acontece de verdade na operação, não para o que parece estar acontecendo.
+                            </p>
+
+                            <div class="stage-matrix">
+                                <div class="matrix-row">
+                                    <span class="matrix-label">01. O CENÁRIO:</span>
+                                    <p class="matrix-text" id="stageInput">
+                                        Alguém chega com um problema urgente e uma solução já pronta na cabeça.
+                                    </p>
+                                </div>
+
+                                <div class="matrix-row">
+                                    <span class="matrix-label">02. COMO ATUO:</span>
+                                    <p class="matrix-text" id="stageFilter">
+                                        Antes de abrir qualquer ferramenta, ouço quem executa o trabalho na ponta e olho os registros reais: planilhas, chamados, telas e reclamações. Separo o que está acontecendo de fato do que é apenas impressão de quem conta a história.
+                                    </p>
+                                </div>
+
+                                <div class="matrix-row matrix-output">
+                                    <span class="matrix-label output-label">O QUE ISSO GERA:</span>
+                                    <p class="matrix-text output-text" id="stageOutput">
+                                        Um diagnóstico claro, sustentado por evidências reais. Sem depender de achismo nem de uma única versão dos fatos.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="m-progress-bg"><div class="m-progress-fill"></div></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section-articles" id="articles">
-        <div class="articles-wrapper">
-            <header class="articles-header">
-                <span class="chapter-num">V. ARQUIVOS DE INTELIGÊNCIA</span>
-                <h2 class="massive-title">ESTUDOS DE <br><span class="gold-italic">CASO.</span></h2>
+    <!-- =========================================
+         SEÇÃO 4: SISTEMA // ARQUITETURA EXPLODIDA 3D
+         ========================================= -->
+    <section class="arch3d-section" id="ecosystem" aria-labelledby="arch3d-heading">
+        <div class="arch3d-bg-wrapper" aria-hidden="true">
+            <div class="arch3d-bg-overlay"></div>
+            <img src="assets/section_4.png" alt="" class="arch3d-bg-image" loading="lazy">
+        </div>
+
+        <div class="arch3d-container">
+            <header class="arch3d-header">
+                <span class="arch3d-kicker">IV. CÓDIGO DE CONDUTA // PRINCÍPIOS OPERACIONAIS</span>
+                <h2 class="arch3d-title" id="arch3d-heading">
+                    PRINCÍPIOS QUE <br>
+                    <span class="arch3d-champagne">ORIENTAM A DECISÃO</span>
+                </h2>
+                <p class="arch3d-subtitle">
+                    Cinco regras de conduta que definem como sustento análises, posicionamentos e escolhas em ambientes complexos.
+                </p>
             </header>
 
-            <div class="intel-terminal">
-                <nav class="intel-menu">
-                    <button class="menu-btn active" data-filter="all">TODOS</button>
-                    <button class="menu-btn" data-filter="tech">TECH</button>
-                    <button class="menu-btn" data-filter="business">NEGÓCIOS</button>
-                    <button class="menu-btn" data-filter="strategy">ESTRATÉGIA</button>
+            <div class="arch3d-layout">
+                <div class="arch3d-stage-col">
+                    <div class="arch3d-quick-nav" role="tablist" aria-label="Seleção rápida de princípios">
+                        <button class="quick-pill active" role="tab" aria-selected="true" data-layer="0" type="button">01</button>
+                        <button class="quick-pill" role="tab" aria-selected="false" data-layer="1" type="button">02</button>
+                        <button class="quick-pill" role="tab" aria-selected="false" data-layer="2" type="button">03</button>
+                        <button class="quick-pill" role="tab" aria-selected="false" data-layer="3" type="button">04</button>
+                        <button class="quick-pill" role="tab" aria-selected="false" data-layer="4" type="button">05</button>
+                    </div>
+
+                    <div class="arch3d-scene" id="arch3dScene">
+                        <div class="arch3d-axis-line" aria-hidden="true"></div>
+
+                        <button class="arch3d-slab active" type="button" data-layer="0" style="--i: 0;">
+                            <span class="slab-grid" aria-hidden="true"></span>
+                            <span class="slab-node" aria-hidden="true"></span>
+                            <span class="slab-index">01</span>
+                            <span class="slab-name">INTEGRIDADE INTELECTUAL</span>
+                            <span class="slab-code">LAYER // TOP</span>
+                        </button>
+
+                        <button class="arch3d-slab" type="button" data-layer="1" style="--i: 1;">
+                            <span class="slab-grid" aria-hidden="true"></span>
+                            <span class="slab-node" aria-hidden="true"></span>
+                            <span class="slab-index">02</span>
+                            <span class="slab-name">RIGOR NA DEFINIÇÃO</span>
+                            <span class="slab-code">LAYER // FILTER</span>
+                        </button>
+
+                        <button class="arch3d-slab" type="button" data-layer="2" style="--i: 2;">
+                            <span class="slab-grid" aria-hidden="true"></span>
+                            <span class="slab-node" aria-hidden="true"></span>
+                            <span class="slab-index">03</span>
+                            <span class="slab-name">CONFIANÇA E TRANSPARÊNCIA</span>
+                            <span class="slab-code">LAYER // FLOW</span>
+                        </button>
+
+                        <button class="arch3d-slab" type="button" data-layer="3" style="--i: 3;">
+                            <span class="slab-grid" aria-hidden="true"></span>
+                            <span class="slab-node" aria-hidden="true"></span>
+                            <span class="slab-index">04</span>
+                            <span class="slab-name">CALIBRAGEM HUMANA</span>
+                            <span class="slab-code">LAYER // SPEC</span>
+                        </button>
+
+                        <button class="arch3d-slab" type="button" data-layer="4" style="--i: 4;">
+                            <span class="slab-grid" aria-hidden="true"></span>
+                            <span class="slab-node" aria-hidden="true"></span>
+                            <span class="slab-index">05</span>
+                            <span class="slab-name">TECNOLOGIA & NEGÓCIO</span>
+                            <span class="slab-code">LAYER // BASE</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="arch3d-readout-col" role="tabpanel">
+                    <div class="arch3d-readout" id="arch3dReadout">
+                        <div class="readout-meta-row">
+                            <span class="readout-kicker" id="readoutKicker">PRINCÍPIO 01 // INTEGRIDADE INTELECTUAL</span>
+                            <span class="readout-counter" id="readoutCounter">01 / 05</span>
+                        </div>
+
+                        <h3 class="readout-title" id="readoutTitle">INTEGRIDADE INTELECTUAL</h3>
+
+                        <p class="readout-desc" id="readoutDesc">
+                            Mudar de posição diante de um argumento melhor não é fraqueza. É obrigação técnica. Não defendo uma ideia só porque foi minha ou porque já está em andamento. Se os fatos mostrarem outro caminho, a análise muda junto.
+                        </p>
+
+                        <div class="readout-fault">
+                            <span class="fault-label">QUANDO ESTE PRINCÍPIO FALHA:</span>
+                            <p class="fault-text" id="readoutFault">
+                                A equipe passa a proteger decisões antigas em vez de resolver o problema real. Erros óbvios são empurrados para frente para ninguém precisar admitir que a premissa inicial estava errada.
+                            </p>
+                        </div>
+
+                        <div class="readout-tags" id="readoutTags">
+                            <span>EVIDÊNCIA</span>
+                            <span>REVISÃO</span>
+                            <span>CRITÉRIO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         SEÇÃO 5: TRAJETÓRIA & DUPLA FLUÊNCIA
+         ========================================= -->
+    <section class="proof-section" id="proof" aria-labelledby="proof-heading">
+        <div class="proof-bg-wrapper" aria-hidden="true">
+            <div class="proof-bg-overlay"></div>
+            <img src="assets/section_5.png" alt="" class="proof-bg-image" loading="lazy">
+        </div>
+
+        <div class="proof-container">
+            <div class="proof-column">
+                <header class="proof-header">
+                    <span class="proof-kicker">V. TRAJETÓRIA & DUPLA FLUÊNCIA</span>
+                    <h2 class="proof-title" id="proof-heading">
+                        EVIDÊNCIAS <br>
+                        <span class="proof-champagne">APLICADAS</span>
+                    </h2>
+                    <p class="proof-subtitle">
+                        Onde mais de 15 anos de rotina comercial e operacional encontram a formação em tecnologia, processos e análise funcional.
+                    </p>
+                </header>
+
+                <div class="proof-metrics">
+                    <div class="metric-item">
+                        <h3 class="metric-value">12 ANOS DE OPERAÇÃO PRÓPRIA</h3>
+                        <p class="metric-desc">
+                            Gestão de ponta a ponta na Stilus (2010–2022), somada a treinamentos comerciais posteriores.
+                        </p>
+                    </div>
+                    <div class="metric-item">
+                        <h3 class="metric-value">BASE TÉCNICA CONCLUÍDA</h3>
+                        <p class="metric-desc">
+                            Graduação em ADS, Pós em Engenharia de Software e MBA em Gestão de Projetos e Metodologias Ágeis.
+                        </p>
+                    </div>
+                    <div class="metric-item">
+                        <h3 class="metric-value">DO PROBLEMA À ESPECIFICAÇÃO</h3>
+                        <p class="metric-desc">
+                            Projetos documentados com fluxos BPMN, regras de negócio, protótipos funcionais e critérios reais de decisão.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="proof-list" role="list">
+                    <article class="proof-item" role="listitem" data-case="01" tabindex="0">
+                        <span class="proof-item-line" aria-hidden="true"></span>
+                        <div class="proof-item-top">
+                            <span class="proof-num">01</span>
+                            <span class="proof-domain">// OPERAÇÃO COMERCIAL PRÓPRIA (2010–2022)</span>
+                        </div>
+                        <div class="proof-item-main">
+                            <div class="proof-item-copy">
+                                <h3 class="proof-item-title">STILUS — VAREJO E ATACADO</h3>
+                                <p class="proof-item-summary">
+                                    12 anos à frente de uma operação multicanal, da compra ao pós-venda, com processos desenhados para reduzir erro e atrito logístico.
+                                </p>
+                            </div>
+                            <span class="proof-cta">
+                                ABRIR DOSSIÊ <span class="proof-arrow" aria-hidden="true">→</span>
+                            </span>
+                        </div>
+                    </article>
+
+                    <article class="proof-item" role="listitem" data-case="02" tabindex="0">
+                        <span class="proof-item-line" aria-hidden="true"></span>
+                        <div class="proof-item-top">
+                            <span class="proof-num">02</span>
+                            <span class="proof-domain">// CASO TÉCNICO DE ANÁLISE FUNCIONAL & PROTÓTIPO</span>
+                        </div>
+                        <div class="proof-item-main">
+                            <div class="proof-item-copy">
+                                <h3 class="proof-item-title">DOUROVINHOS MOBILE SALES</h3>
+                                <p class="proof-item-summary">
+                                    Especificação funcional completa e protótipo MVP construídos a partir de um cenário real de distribuição de vinhos em campo.
+                                </p>
+                            </div>
+                            <span class="proof-cta">
+                                ABRIR DOSSIÊ <span class="proof-arrow" aria-hidden="true">→</span>
+                            </span>
+                        </div>
+                    </article>
+
+                    <article class="proof-item" role="listitem" data-case="03" tabindex="0">
+                        <span class="proof-item-line" aria-hidden="true"></span>
+                        <div class="proof-item-top">
+                            <span class="proof-num">03</span>
+                            <span class="proof-domain">// PRODUTO PRÓPRIO — MVP VALIDADO E ENCERRADO</span>
+                        </div>
+                        <div class="proof-item-main">
+                            <div class="proof-item-copy">
+                                <h3 class="proof-item-title">PROJETO WINWIN</h3>
+                                <p class="proof-item-summary">
+                                    Aplicativo criado para resolver um problema real de rotina familiar, testado com famílias reais e encerrado por decisão consciente de foco.
+                                </p>
+                            </div>
+                            <span class="proof-cta">
+                                ABRIR DOSSIÊ <span class="proof-arrow" aria-hidden="true">→</span>
+                            </span>
+                        </div>
+                    </article>
+
+                    <article class="proof-item" role="listitem" data-case="academic" tabindex="0">
+                        <span class="proof-item-line" aria-hidden="true"></span>
+                        <div class="proof-item-top">
+                            <span class="proof-num">04</span>
+                            <span class="proof-domain">// FORMAÇÃO & BASE TÉCNICA</span>
+                        </div>
+                        <div class="proof-item-main">
+                            <div class="proof-item-copy">
+                                <h3 class="proof-item-title">TRAJETÓRIA ACADÊMICA</h3>
+                                <p class="proof-item-summary">
+                                    Graduação em ADS, Pós em Engenharia de Software e MBA em Gestão de Projetos e Metodologias Ágeis.
+                                </p>
+                            </div>
+                            <span class="proof-cta">
+                                ABRIR DOSSIÊ <span class="proof-arrow" aria-hidden="true">→</span>
+                            </span>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         SEÇÃO 6: DOSSIÊS // TESES AUTORAIS (ARCO 3D)
+         ========================================= -->
+    <section class="arc-section" id="articles" aria-labelledby="arc-heading">
+        <div class="arc-bg-wrapper" aria-hidden="true">
+            <div class="arc-bg-overlay"></div>
+            <img src="assets/section_6.png" alt="" class="arc-bg-image" loading="lazy">
+        </div>
+
+        <div class="arc-container">
+            <header class="arc-header">
+                <span class="arc-kicker">VI. DOSSIÊS // TESES AUTORAIS</span>
+                <h2 class="arc-title" id="arc-heading">
+                    CRITÉRIO EM <br>
+                    <span class="arc-champagne">ESTADO PURO</span>
+                </h2>
+                <p class="arc-subtitle">
+                    Quatro leituras curtas sobre como decisões de varejo, operação e rotina revelam os mesmos erros que quebram projetos de tecnologia.
+                </p>
+            </header>
+
+            <div class="arc-stage" id="arcStage" role="region" aria-label="Galeria espacial de teses autorais">
+                <article class="arc-monolith" data-index="0" data-doc="01" data-pos="center">
+                    <div class="arc-specular" aria-hidden="true"></div>
+                    <div class="arc-card-top">
+                        <span class="arc-doc-id">DOC.01</span>
+                        <span class="arc-doc-cat">REQUISITOS & REALIDADE</span>
+                    </div>
+                    <div class="arc-card-body">
+                        <h3 class="arc-card-title">O DILEMA DO POLIÉSTER</h3>
+                        <p class="arc-card-excerpt">
+                            Por que uma decisão que fecha no papel falha quando encontra o uso real.
+                        </p>
+                    </div>
+                    <div class="arc-card-footer">
+                        <time class="arc-card-time" datetime="PT1M">1 MIN DE LEITURA</time>
+                        <button class="arc-read-btn" type="button" data-open-doc="01">
+                            LER TESE <span aria-hidden="true">↗</span>
+                        </button>
+                    </div>
+                </article>
+
+                <article class="arc-monolith" data-index="1" data-doc="02" data-pos="right">
+                    <div class="arc-specular" aria-hidden="true"></div>
+                    <div class="arc-card-top">
+                        <span class="arc-doc-id">DOC.02</span>
+                        <span class="arc-doc-cat">FLUXO & ESCOPO</span>
+                    </div>
+                    <div class="arc-card-body">
+                        <h3 class="arc-card-title">A LÓGICA DA ZARA</h3>
+                        <p class="arc-card-excerpt">
+                            O que o giro rápido de estoque ensina sobre software inchado e escopo mal priorizado.
+                        </p>
+                    </div>
+                    <div class="arc-card-footer">
+                        <time class="arc-card-time" datetime="PT1M">1 MIN DE LEITURA</time>
+                        <button class="arc-read-btn" type="button" data-open-doc="02">
+                            LER TESE <span aria-hidden="true">↗</span>
+                        </button>
+                    </div>
+                </article>
+
+                <article class="arc-monolith" data-index="2" data-doc="03" data-pos="back">
+                    <div class="arc-specular" aria-hidden="true"></div>
+                    <div class="arc-card-top">
+                        <span class="arc-doc-id">DOC.03</span>
+                        <span class="arc-doc-cat">PROCESSO & FLUXO</span>
+                    </div>
+                    <div class="arc-card-body">
+                        <h3 class="arc-card-title">O ALGORITMO DO CAPITAL ZERO</h3>
+                        <p class="arc-card-excerpt">
+                            Como um processo bem desenhado reduz risco antes mesmo de exigir capital ou sistema complexo.
+                        </p>
+                    </div>
+                    <div class="arc-card-footer">
+                        <time class="arc-card-time" datetime="PT1M">1 MIN DE LEITURA</time>
+                        <button class="arc-read-btn" type="button" data-open-doc="03">
+                            LER TESE <span aria-hidden="true">↗</span>
+                        </button>
+                    </div>
+                </article>
+
+                <article class="arc-monolith" data-index="3" data-doc="04" data-pos="left">
+                    <div class="arc-specular" aria-hidden="true"></div>
+                    <div class="arc-card-top">
+                        <span class="arc-doc-id">DOC.04</span>
+                        <span class="arc-doc-cat">COMUNICAÇÃO & STAKEHOLDERS</span>
+                    </div>
+                    <div class="arc-card-body">
+                        <h3 class="arc-card-title">O INTERVALO DA DECISÃO</h3>
+                        <p class="arc-card-excerpt">
+                            O espaço silencioso entre quem define a regra e quem convive com ela na rotina.
+                        </p>
+                    </div>
+                    <div class="arc-card-footer">
+                        <time class="arc-card-time" datetime="PT1M">1 MIN DE LEITURA</time>
+                        <button class="arc-read-btn" type="button" data-open-doc="04">
+                            LER TESE <span aria-hidden="true">↗</span>
+                        </button>
+                    </div>
+                </article>
+            </div>
+
+            <div class="arc-dock" role="tablist" aria-label="Navegação entre dossiês">
+                <button class="arc-nav-btn" id="arcPrev" type="button" aria-label="Dossiê anterior">←</button>
+                <div class="arc-dots">
+                    <button class="arc-dot active" role="tab" aria-selected="true" data-target="0" type="button">01</button>
+                    <button class="arc-dot" role="tab" aria-selected="false" data-target="1" type="button">02</button>
+                    <button class="arc-dot" role="tab" aria-selected="false" data-target="2" type="button">03</button>
+                    <button class="arc-dot" role="tab" aria-selected="false" data-target="3" type="button">04</button>
+                </div>
+                <button class="arc-nav-btn" id="arcNext" type="button" aria-label="Próximo dossiê">→</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         SEÇÃO 7: CONTATO // A SALA DE DECISÃO
+         ========================================= -->
+    <section class="contact-section" id="contact" aria-labelledby="contact-heading">
+        <div class="contact-bg-wrapper" aria-hidden="true">
+            <div class="contact-bg-overlay"></div>
+            <img src="assets/section_7.png" alt="" class="contact-bg-image" loading="lazy">
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-main">
+                <header class="contact-header">
+                    <span class="contact-kicker">VII. CONTATO // ACESSO DIRETO</span>
+                    <h2 class="contact-title" id="contact-heading">
+                        CLAREZA ANTES <br>
+                        <span class="contact-champagne">DO PRÓXIMO PASSO</span>
+                    </h2>
+                    <p class="contact-subtitle">
+                        Se fizer sentido conversar sobre uma posição de análise de negócios ou análise funcional, um desafio de processos ou um projeto em estruturação, o ponto de partida é o mesmo: contexto objetivo.
+                    </p>
+                </header>
+
+                <div class="contact-cta-group">
+                    <button class="contact-primary-btn" id="openContactModal" type="button">
+                        <span>INICIAR CONVERSA</span>
+                        <span class="contact-btn-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <span class="contact-microcopy">
+                        CONTATO DIRETO · SEM INTERMEDIÁRIOS
+                    </span>
+                </div>
+
+                <nav class="contact-socials" aria-label="Redes sociais oficiais">
+                    <div class="socials-icons">
+                        <a href="https://linkedin.com/in/jaquelinedaniel-pt" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                <rect x="2" y="9" width="4" height="12"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </a>
+
+                        <a href="https://github.com/jaquelinedaniel-pt" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                            </svg>
+                        </a>
+
+                        <a href="https://instagram.com/jaquelinedaniel.pt" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </a>
+                    </div>
                 </nav>
+            </div>
 
-                <div class="intel-list" id="intel-list">
-                    
-                    <div class="intel-item" data-category="tech">
-                        <div class="intel-preview" onclick="openReading(this)">
-                            <h3>O DILEMA DO POLIÉSTER: O cliente acha que sabe o que precisa.</h3>
-                            <span style="color:#b8975a">→</span>
-                        </div>
-                        <div class="intel-full-text" style="display: none;">
-                            <h2>Por que atender ao pedido do cliente é, frequentemente, a maneira mais rápida de destruir o projeto.</h2>
-                            <p>No mundo corporativo, existe uma crença perigosa de que 'o cliente tem sempre razão'. A minha experiência prova o contrário: o cliente tem a dor, mas raramente tem o diagnóstico.</p>
-                            <p>Certa vez, recebi uma encomenda massiva de blazers de poliéster para o Nordeste brasileiro. O pedido era claro, o pagamento garantido. Um executor comum teria celebrado a venda. Eu vi o risco: poliéster em clima tropical não é vestuário, é uma barreira térmica. Entregar aquele produto seria vender uma experiência de sufocamento, gerando devolução e mancha na reputação.</p>
-                            <p>Intervim e reestruturei o pedido para linho e viscose. O resultado foi liquidez total e fidelização.</p>
-                            <br><p><strong>A Aplicação na Tecnologia:</strong></p>
-                            <p>Trago essa mesma Engenharia de Ceticismo para o software. Stakeholders pedem funcionalidades ('o poliéster') baseados em achismos, ignorando a infraestrutura ou a jornada do usuário. O meu papel é auditar a solicitação, vetar o desperdício e garantir que a equipe técnica construa apenas o que gera valor real. Eu protejo o capital do cliente contra os seus próprios desejos equivocados.</p>
-                            <br><p><strong>O VEREDITO:</strong></p>
-                            <p>O cliente paga para ser contrariado. Se você aceita um pedido que sabe que vai falhar, você não é um parceiro, é um cúmplice do prejuízo.</p>
-                        </div>
-                    </div>
-
-                    <div class="intel-item" data-category="business">
-                        <div class="intel-preview" onclick="openReading(this)">
-                            <h3>A Lógica da Zara: Por que o Estoque Parado é um Erro de Decisão.</h3>
-                            <span style="color:#b8975a">→</span>
-                        </div>
-                        <div class="intel-full-text" style="display: none;">
-                            <h2>Um sistema que apenas processa dados é um passivo. Tecnologia deve gerar liquidez.</h2>
-                            <p>Muitos analistas olham para um campo de 'preço' como um número num banco de dados. Eu olho para ele como um gatilho de sobrevivência financeira.</p>
-                            <p>Aprendi com o modelo Fast Fashion que o estoque parado é a morte do fluxo de caixa. Quando a Zara reduz um preço drasticamente, ela não está perdendo margem; ela está comprando velocidade e liquidez. Ela entende que o custo de oportunidade do espaço ocupado é maior que o desconto dado.</p>
-                            <br><p><strong>A Aplicação:</strong></p>
-                            <p>Transfiro essa mentalidade de varejo para a arquitetura de sistemas. Um software inchado, com funcionalidades que ninguém usa, é 'estoque parado' digital — custa servidor, custa manutenção e custa complexidade cognitiva. Desenho regras de negócio e gatilhos lógicos que forçam o sistema a operar com a eficiência de um varejista de elite: rápido, enxuto e focado exclusivamente na conversão de processos em resultado financeiro.</p>
-                            <br><p><strong>O VEREDITO:</strong></p>
-                            <p>Qualquer funcionalidade que não acelere o fluxo de caixa ou blinde a operação é apenas vaidade técnica. Delete-a.</p>
-                        </div>
-                    </div>
-
-                    <div class="intel-item" data-category="strategy">
-                        <div class="intel-preview" onclick="openReading(this)">
-                            <h3>ALGORITMO DO CAPITAL ZERO (RISCO E ESCALA).</h3>
-                            <span style="color:#b8975a">→</span>
-                        </div>
-                        <div class="intel-full-text" style="display: none;">
-                            <h2>Como a precisão na entrega substitui a necessidade de investimento financeiro.</h2>
-                            <p>Escalar operações físicas tradicionalmente exige capital intensivo. Eu decidi contornar a regra. Desenhei um modelo operacional onde a minha credibilidade técnica servia como garantia bancária.</p>
-                            <p>Ao estabelecer uma percepção de valor inquestionável e protocolos de entrega à prova de falhas (SLA 100%), consegui que toda a cadeia — fornecedores e clientes, financiasse a operação. O capital girava antes da execução logística.</p>
-                            <br><p><strong>A Aplicação:</strong></p>
-                            <p>Isso prova que a Previsibilidade é o ativo mais valioso de um mercado caótico. No desenvolvimento de soluções digitais, aplico este princípio: crio ambientes de alta confiança e baixo risco, onde a arquitetura do projeto é tão sólida que a venda e a adesão acontecem antes mesmo do deploy final. Quem domina a mitigação de riscos, domina o mercado.</p>
-                            <br><p><strong>O VEREDITO:</strong></p>
-                            <p>Promessas custam caro. Processos garantem lucro. Quando a sua entrega é inquestionável, o mercado financia a sua expansão.</p>
-                        </div>
-                    </div>
-
+            <footer class="contact-footer">
+                <div class="footer-brand-wrap">
+                    <img src="assets/JD_champagne.svg" alt="Monograma JD" class="footer-monogram">
+                    <p class="footer-copy">JAQUELINE DANIEL © 2026 TODOS OS DIREITOS RESERVADOS</p>
                 </div>
-            </div>
-        </div>
-
-        <div class="reading-overlay" id="reading-modal">
-            <div class="modal-content">
-                <button class="close-modal" onclick="closeReading()">FECHAR [X]</button>
-                <div id="modal-body"></div>
-            </div>
+                <button class="footer-top-btn" id="backToTopBtn" type="button" aria-label="Voltar ao topo da página">
+                    TOPO <span aria-hidden="true">↑</span>
+                </button>
+            </footer>
         </div>
     </section>
 
-    <section class="section-manifesto">
-        <div class="manifesto-bg-text">AUTORIDADE</div>
-        <div class="manifesto-container">
-            <blockquote class="massive-quote">
-                "O TOPO NÃO É UM DESTINO.  <br>
-                <span class="gold-italic">É O MEU PADRÃO DE OPERAÇÃO."</span>
-            </blockquote>
-            <div class="quote-line"></div>
-        </div>
-    </section>
+    <!-- =========================================
+         MODAL SEÇÃO 2: DIAGNÓSTICO PROFUNDO
+         ========================================= -->
+    <div class="diagnosis-modal-overlay" id="diagnosisModal" aria-hidden="true">
+        <div class="diagnosis-modal-container" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <button class="modal-close-btn" id="closeModal" type="button" aria-label="Fechar modal">×</button>
+            <div class="modal-header-kicker" id="modalKicker">DIAGNÓSTICO ESTRATÉGICO // TESE 01</div>
+            <h3 class="modal-title" id="modalTitle">A ILUSÃO DA VELOCIDADE</h3>
 
-    <footer class="main-site-footer" id="contact">
-        <div class="footer-container">
-            <div class="footer-cta-center">
-                <span class="chapter-num">VII. CONTATO</span>
-                <div class="footer-intro-text" style="margin-bottom: 2rem; opacity: 0.7; font-family: 'Space Grotesk';">
-                    Se você busca um executor silencioso, não sou a pessoa certa. <br>
-                    Se você busca uma mente estratégica capaz de redesenhar sua lógica de operação e garantir que a tecnologia 
-                    sirva ao negócio (e não o contrário), o diálogo começa agora.
+            <div class="modal-grid-content">
+                <div class="modal-block">
+                    <h4>SINTOMA OPERACIONAL</h4>
+                    <p id="modalSymptom"></p>
                 </div>
-                <a href="mailto:contato@jaquelinedaniel.com" class="button-cta-luxury">
-                    SOLICITAR DIAGNÓSTICO
+                <div class="modal-block">
+                    <h4>A CAUSA RAIZ</h4>
+                    <p id="modalCause"></p>
+                </div>
+            </div>
+
+            <div class="modal-remedy-box">
+                <span class="remedy-badge">CRITÉRIO DE RESOLUÇÃO</span>
+                <p id="modalRemedy"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- =========================================
+         GAVETA SEÇÃO 5: DOSSIÊS DE CAMPO
+         ========================================= -->
+    <div class="dossier-overlay" id="dossierDrawer" aria-hidden="true">
+        <aside class="dossier-panel" role="dialog" aria-modal="true" aria-labelledby="dossierTitle">
+            <div class="dossier-specular" aria-hidden="true"></div>
+
+            <div class="dossier-header">
+                <span class="dossier-kicker" id="dossierKicker"></span>
+                <button class="dossier-close" id="closeDossier" type="button" aria-label="Fechar dossiê">
+                    FECHAR ×
+                </button>
+            </div>
+
+            <div class="dossier-body">
+                <h3 class="dossier-title" id="dossierTitle"></h3>
+                <p class="dossier-lead" id="dossierLead"></p>
+
+                <div class="dossier-blocks">
+                    <div class="dossier-block">
+                        <span class="dossier-label">01. CENÁRIO & GARGALO</span>
+                        <p class="dossier-text" id="dossierContext"></p>
+                    </div>
+
+                    <div class="dossier-block">
+                        <span class="dossier-label">02. ABORDAGEM APLICADA</span>
+                        <p class="dossier-text" id="dossierArchitecture"></p>
+                    </div>
+
+                    <div class="dossier-block dossier-block-impact">
+                        <span class="dossier-label label-gold">03. DECISÃO & IMPACTO</span>
+                        <p class="dossier-text text-bright" id="dossierImpact"></p>
+                    </div>
+                </div>
+
+                <div class="dossier-artifacts">
+                    <span class="dossier-label">ARTEFATOS & CRITÉRIOS</span>
+                    <div class="dossier-tags" id="dossierTags"></div>
+                </div>
+            </div>
+
+            <div class="dossier-footer" id="dossierFooter">
+                <a href="https://github.com/jaquelinedaniel-pt" target="_blank" rel="noopener noreferrer" class="dossier-audit-btn" id="dossierLink">
+                    <span id="dossierLinkText">AUDITAR DOCUMENTAÇÃO NO GITHUB</span>
+                    <span aria-hidden="true">↗</span>
                 </a>
             </div>
-            <div class="social-icons-wrapper">
-                <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        </aside>
+    </div>
+
+    <!-- =========================================
+         MODAL SEÇÃO 7: CONTATO & E-MAIL
+         ========================================= -->
+    <div class="cmodal-overlay" id="contactModal" aria-hidden="true">
+        <div class="cmodal-container" role="dialog" aria-modal="true" aria-labelledby="cmodalTitle">
+            <div class="cmodal-specular" aria-hidden="true"></div>
+
+            <header class="cmodal-header">
+                <span class="cmodal-kicker">CANAL DIRETO // E-MAIL</span>
+                <button class="cmodal-close" id="closeContactModal" type="button" aria-label="Fechar janela de contato">
+                    FECHAR ×
+                </button>
+            </header>
+
+            <h3 class="cmodal-title" id="cmodalTitle">VAMOS ESTRUTURAR O CENÁRIO</h3>
+            <p class="cmodal-lead">
+                Descreva o contexto, a vaga ou o gargalo operacional em poucas linhas para avaliarmos o encaixe com clareza.
+            </p>
+
+            <div class="cmodal-email-box">
+                <div class="email-info">
+                    <span class="email-label">CANAL DIRETO // E-MAIL</span>
+                    <a href="mailto:jaquelinedaniel.pt@gmail.com" class="email-address" id="directEmailText">
+                        jaquelinedaniel.pt@gmail.com
+                    </a>
+                </div>
+                <button class="copy-email-btn" id="copyEmailBtn" type="button" data-email="jaquelinedaniel.pt@gmail.com">
+                    COPIAR E-MAIL
+                </button>
             </div>
-            <div class="footer-credits">
-                <div class="credits-line"></div>
-                <p class="copyright-center">© 2026 JAQUELINE DANIEL. // ESTRUTURA É PODER.</p>
-                <p class="status-sub">SISTEMA OPERACIONAL // ENGENHARIA DE RESULTADOS</p>
-            </div>
+
+            <form class="cmodal-form" id="contactBriefForm" novalidate>
+                <div class="cmodal-row">
+                    <div class="cmodal-field">
+                        <label for="cName">NOME</label>
+                        <input type="text" id="cName" name="name" placeholder="Seu nome" required autocomplete="name">
+                    </div>
+                    <div class="cmodal-field">
+                        <label for="cEmail">E-MAIL</label>
+                        <input type="email" id="cEmail" name="email" placeholder="seu.email@exemplo.com" required autocomplete="email">
+                    </div>
+                </div>
+
+                <div class="cmodal-field">
+                    <label for="cMessage">CONTEXTO / DESAFIO</label>
+                    <textarea id="cMessage" name="message" rows="3" placeholder="Conte brevemente o cenário, a oportunidade ou o gargalo que você quer discutir..." required></textarea>
+                </div>
+
+                <p class="cmodal-privacy">
+                    As informações enviadas são usadas exclusivamente para responder ao seu contato. Retorno direto por e-mail em prazo habitual de até dois dias úteis.
+                </p>
+
+                <div class="cmodal-actions">
+                    <button type="submit" class="cmodal-submit-btn">
+                        <span>ABRIR NO E-MAIL</span>
+                        <span aria-hidden="true">↗</span>
+                    </button>
+                    <span class="cmodal-status" id="cmodalStatus" aria-live="polite"></span>
+                </div>
+            </form>
         </div>
-    </footer>
+    </div>
 
     <script src="script.js"></script>
 </body>

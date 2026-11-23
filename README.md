@@ -1,63 +1,100 @@
-# 🏛️ Vitrine de Autoridade // Jaqueline Daniel
+<div align="center">
 
-> "O caos é matéria-prima. Eu sou a estrutura."
+<img src="assets/JD_champagne.svg" alt="Monograma Jaqueline Daniel" width="46">
 
-<p align="center">
-  <img src="assets/site.png" width="800" alt="Preview do Site Jaqueline Daniel">
-</p>
+# JAQUELINE DANIEL
+### Análise de Negócios · Análise Funcional · Processos
 
-Este repositório contém o código-fonte do meu site pessoal e Dossiê de Autoridade. Mais do que um portfólio tradicional, este projeto foi arquitetado para ser uma **ferramenta de posicionamento estratégico**, projetada para refletir a intersecção entre a Visão Executiva (Negócios) e a Engenharia de Software (Tech).
+> *"Compreender precede transformar."*
 
-🔗 **[Visualizar o Projeto em Produção](https://www.jaquelinedaniel.com)**
+[![Produção](https://img.shields.io/badge/PRODU%C3%87%C3%83O-www.jaquelinedaniel.com-E2C99E?style=for-the-badge&labelColor=050507)](https://www.jaquelinedaniel.com)
+[![GitHub](https://img.shields.io/badge/GITHUB-jaquelinedaniel--pt-1E232B?style=for-the-badge&logo=github&logoColor=FFF7E8)](https://github.com/jaquelinedaniel-pt)
+[![LinkedIn](https://img.shields.io/badge/LINKEDIN-Jaqueline_Daniel-1E232B?style=for-the-badge&logo=linkedin&logoColor=E2C99E)](https://linkedin.com/in/jaquelinedaniel-pt)
+
+<br>
+
+<img src="assets/preview-hero.png" alt="Preview da Hero — Jaqueline Daniel" width="100%">
+
+</div>
 
 ---
 
-## 🎯 Objetivo do Projeto
+## Visão Geral
 
-O mercado está saturado de portfólios focados exclusivamente em frameworks e trechos de código descontextualizados. O objetivo desta aplicação web é transcender a técnica e focar na **resolução de problemas**. 
+Repositório oficial do site pessoal e posicionamento profissional de **Jaqueline Daniel**, concebido sob direção de arte editorial minimalista para conectar dois perfis de visita sem ruído: **recrutadores de tecnologia** e **decisores de negócio**.
 
-A arquitetura de informação e o design UI/UX foram desenvolvidos sob o **Padrão Premium**, utilizando um layout de alto contraste (Preto, Branco e Dourado) e tipografia monumental para comunicar senioridade, precisão e liderança.
+Em vez de apresentar listas genéricas de ferramentas fora de contexto, a arquitetura da página conduz a leitura em sete atos progressivos — do diagnóstico de falhas operacionais ao método de investigação, princípios de decisão, evidências aplicadas em campo e teses autorais.
 
-## ⚙️ Arquitetura e Tecnologias
+---
 
-Para garantir a máxima performance, fluidez e controle absoluto sobre a interface, o projeto foi desenvolvido focando nos fundamentos da web (Vanilla), sem a sobrecarga de bibliotecas externas desnecessárias:
+## Arquitetura Narrativa (7 Seções)
 
-* **HTML5 Semântico:** Estruturação lógica e acessível do conteúdo, utilizando modais nativos simulados e separação rigorosa de seções (Hero, Gênese, Metodologia, Ecossistema, Track Record).
-* **CSS3 Avançado:** * Uso extensivo de `CSS Grid` e `Flexbox` para layouts complexos.
-    * Implementação de *Media Queries* rigorosas garantindo responsividade total (Mobile First na adaptação estrutural).
-    * *Custom Properties* (Variáveis CSS) para manutenção do Design System.
-    * Animações de keyframes suaves (`@keyframes`) e transições cúbicas (`cubic-bezier`) para um "feel" de luxo.
-* **Vanilla JavaScript (ES6+):**
-    * **Intersection Observer API:** Gatilho otimizado para animação de contagem de números métricos, ativando apenas quando o usuário foca na seção.
-    * **Parallax Dinâmico:** Efeito de profundidade 3D na Hero Section atrelado ao movimento do mouse (`mousemove`).
-    * **Manipulação do DOM:** Sistema de *Tabs* customizado para o filtro de "Arquivos de Inteligência" e modais assíncronos para leitura de Casos de Estudo.
+| Ato | Seção | Âncora | Papel Estratégico e Interação |
+| :--- | :--- | :--- | :--- |
+| **I** | **Hero em 2 Atos** | `#home` | Abertura tipográfica monumental com transição coreografada para o painel editorial, faixa de especialidade (*teste dos 5 segundos*) e acesso direto ao portfólio. |
+| **II** | **A Anatomia do Erro Operacional** | `#about` | Carrossel contínuo em vidro espacial com controle manual de pausa/retomada e modais de diagnóstico (`Sintoma`, `Causa Raiz` e `Critério de Resolução`). |
+| **III** | **Critérios de Atuação** | `#hub` | Navegação por abas acessíveis com painel dinâmico estruturado em três camadas (`Cenário`, `Como Atuo` e `O que isso gera`). |
+| **IV** | **Princípios que Orientam a Decisão** | `#ecosystem` | Pilha isométrica 3D interativa com cinco regras de conduta operacional e o impacto real quando cada princípio falha. |
+| **V** | **Evidências Aplicadas** | `#proof` | Síntese de lastro comercial e técnico seguida de quatro dossiês auditáveis em gaveta lateral (*slide-over drawer*): Stilus, DouroVinhos, WinWin e Formação Acadêmica. |
+| **VI** | **Critério em Estado Puro** | `#articles` | Galeria 3D em arco (*coverflow*) com leitor editorial em modal, barra de progresso de leitura e chamada contextualizada por tese. |
+| **VII** | **Contato** | `#contact` | Canal direto via modal com cópia de e-mail em um clique, validação de formulário e disparo estruturado para o cliente de e-mail. |
 
-## 🧠 Destaques de Engenharia UI/UX
+---
 
-1.  **Navegação Espacial (Side Nav):** Sistema de rastreamento de scroll que atualiza dinamicamente o indicador de leitura (GPS da página), mantendo o usuário orientado na narrativa.
-2.  **Sistema de Overlay (Modais):** Os textos de alta densidade (Estudos de Caso e Pilares Metodológicos) foram encapsulados em modais com fundo *backdrop-filter (blur)*. Isso mantém o layout base extremamente limpo (minimalista), revelando a complexidade apenas sob demanda do usuário.
-3.  **Responsividade Adaptativa:** Quebra inteligente de Grids. O gráfico do "Ecossistema", que no desktop é um nó posicionado de forma absoluta, transforma-se matematicamente em uma lista de fluxo linear em dispositivos móveis, sem quebrar a semântica.
-4.  **Tipografia Escalar:** Uso da função `clamp()` do CSS para garantir que a tipografia monumental se adapte fluidamente a qualquer resolução de tela (de 4K a displays mobile pequenos).
+## Sistema Visual & Tipografia
 
-## 🗂️ Estrutura de Diretórios
+O projeto adota uma paleta escura de alto contraste inspirada em publicação editorial executiva, calibrada para conforto de leitura e conformidade **WCAG 2.2 AA**:
 
-```bash
+| Token | Hex | Aplicação |
+| :--- | :--- | :--- |
+| **Obsidiana Base** | `#050507` | Fundo principal e fusão contínua entre seções |
+| **Champagne Bright** | `#FFF7E8` | Pontos de luz especular, títulos em destaque e estados ativos |
+| **Champagne Mid** | `#E2C99E` | Kickers, filetes arquitetônicos, indicadores e bordas ativas |
+| **Champagne Deep** | `#B59868` | Base dos gradientes metálicos escovados |
+| **Text Muted** | `#B4B8C5` | Textos de apoio e descrições secundárias (contraste `> 4.5:1`) |
+
+* **Tipografia de Display:** `Space Grotesk` (títulos monumentais, rótulos técnicos e controles).
+* **Tipografia Editorial:** `Inter` (corpo de texto fluido e leitura prolongada).
+
+---
+
+## Decisões de Engenharia Front-end
+
+Desenvolvido em **Vanilla Stack (HTML5, CSS3, ES6+)** sem frameworks pesados para garantir controle granular de renderização, zero dependências externas e carregamento imediato:
+
+* **HTML5 Semântico & SEO:** Hierarquia estrita de headings (`h1` único na Hero, `h2` por seção, `h3` em componentes), atributos ARIA (`tablist`, `tab`, `tabpanel`, `dialog`), Open Graph, Twitter Cards e dados estruturados `JSON-LD` (`Schema.org/Person`).
+* **CSS3 Arquitetônico:** Design System centralizado em Custom Properties (`:root`), escalas fluidas com `clamp()`, CSS Grid/Flexbox, profundidade 3D (`perspective`, `transform-style: preserve-3d`), superfícies translúcidas (`backdrop-filter`) e breakpoints para `320px`, `375px`, `768px` e desktop.
+* **JavaScript Modular & UX:** Gerenciamento de estado para modais, drawers, abas, carrossel 3D com suporte a *swipe* tátil, *scroll spy* na navegação lateral e cópia de e-mail via `navigator.clipboard` com fallback.
+* **Acessibilidade (WCAG 2.2):** Navegação integral por teclado (`Tab`, setas direcionais, `Enter`, `Space`, `Escape`), *focus trap* com retorno automático de foco ao fechar qualquer modal ou gaveta, indicadores `:focus-visible` e suporte nativo a `@media (prefers-reduced-motion: reduce)`.
+
+---
+
+## Estrutura de Diretórios
+
+```text
 ├── assets/
-│   ├── hero.png                 # Imagem tratada da Hero Section
-│   └── foto-profissional.jpg    # Fotografia do perfil estratégico
-├── index.html                   # Estrutura e conteúdo semântico
-├── style.css                    # Design System e regras de responsividade
-├── script.js                    # Lógica de interações, Observer e Parallax
-└── README.md                    # Dossiê técnico do repositório
-```
+│   ├── JD_champagne.svg                        # Monograma oficial (modo escuro e rodapé)
+│   ├── JD_carvao.svg                           # Monograma adaptativo (favicon modo claro)
+│   ├── JD_dourado_referencia_transparente.png  # Monograma da barra superior
+│   ├── hero.png                                # Retrato principal da Hero
+│   ├── background_hero.png                     # Blueprint técnico de fundo (Seção I)
+│   ├── section_2.png                           # Fundo técnico (Seção II)
+│   ├── section_3.png                           # Fundo cênico (Seção III)
+│   ├── section_4.png                           # Fundo isométrico (Seção IV)
+│   ├── section_5.png                           # Fundo documental (Seção V)
+│   ├── section_6.png                           # Fundo editorial (Seção VI)
+│   ├── section_7.png                           # Fundo da sala de decisão (Seção VII)
+│   └── preview-hero.png                        # Captura da Hero em produção para o README
+├── index.html                                  # Estrutura semântica, SEO e modais
+├── style.css                                   # Design System, animações e responsividade
+├── script.js                                   # Interações, dados dos dossiês e acessibilidade
+└── README.md                                   # Documentação técnica do repositório
 
-### 🌐 Autoridade e Contato
-A tecnologia é apenas o meio. A resolução definitiva do problema é o fim.
-Se você procura uma mente estratégica capaz de traduzir necessidades de negócios complexos em requisitos lógicos impecáveis, o diálogo começa aqui:
+## Repositórios Relacionados
+dourovinhos-mobile-sales — Especificação funcional completa (BPMN 2.0, SRS, Gherkin, plano UAT) e protótipo MVP Offline-First.
 
-LinkedIn: linkedin.com/in/jaquelinedaniel-pt
+winwin-product-portfolio — Documentação de discovery, regras de negócio e critério de encerramento de produto próprio.
 
-E-mail: jaquelinedaniel.pt@gmail.com
+Jaqueline Daniel · Porto, Portugal
 
-© 2026 Jaqueline Daniel. Sistema Operacional // Engenharia de Resultados.
-
+LinkedIn · GitHub · jaquelinedaniel.pt@gmail.com
